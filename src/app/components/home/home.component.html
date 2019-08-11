@@ -1,0 +1,17 @@
+<div fxLayout>
+  <div style="width: 75%">
+      <slideshow
+      [minHeight]="'525px'"
+      [autoPlay]="true"
+      [showArrows]="true"
+      [showDots]="true"
+      [imageUrls]="slides"
+      [lazyLoad]="slides?.length > 1"
+      [autoPlayWaitForLazyLoad]="true"
+      (onIndexChanged)="swipeTextSlide($event)">
+</slideshow>
+  </div>
+  <div style="width: 25%">
+      <teximate [text]="text" [enter]="enterAnimation" ></teximate>
+  </div>
+</div>

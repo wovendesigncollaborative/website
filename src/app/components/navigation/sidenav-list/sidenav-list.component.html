@@ -1,0 +1,28 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+        <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+    </a>
+
+    <mat-list-item [matMenuTriggerFor]="menu">
+      <mat-icon>unfold_more</mat-icon>
+      <a matline>About us</a>
+    </mat-list-item>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onSidenavClose()">Who are we</button>
+      <button mat-menu-item (click)="onSidenavClose()">What we do</button>
+      <button mat-menu-item (click)="onSidenavClose()">Our clients</button>
+    </mat-menu>
+
+    <a mat-list-item routerLink="/projects" (click)="onSidenavClose()">
+      <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Projects</span>
+    </a>
+    <a mat-list-item routerLink="/research-and-publications" (click)="onSidenavClose()">
+        <mat-icon>account_balance</mat-icon><span class="nav-caption">Research and Publications</span>
+    </a>
+    <a mat-list-item routerLink="/awards" (click)="onSidenavClose()">
+        <mat-icon>account_balance</mat-icon><span class="nav-caption">Awards</span>
+    </a>
+    <a mat-list-item routerLink="/contact-us" (click)="onSidenavClose()">
+        <mat-icon>account_balance</mat-icon><span class="nav-caption">Contact us</span>
+    </a>
+  </mat-nav-list>

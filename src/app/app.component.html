@@ -1,13 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
-    <app-navigation-menu></app-navigation-menu>
-<div style="display: flex; flex-direction: column; width: 100%; justify-content:center; align-items: center">
-
-  <p style="padding: 30px">Nisha's website</p>
-
-
-  <img src="assets/img/nisha.jpg" style="width:300px;  transform: rotate(90deg); margin: 10px">
-  <img src="assets/img/cleo.jpg" style="width:300px;">
-</div>
-</div>
-
+<app-layout>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <!--this is a place for us to add side-nav code-->
+      <app-sidenav-list (sidenaveClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!--in here all the content must reside. We will add a navigation header as well-->
+      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</app-layout>
