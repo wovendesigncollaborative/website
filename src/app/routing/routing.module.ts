@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../components/home/home.component';
-import { ProjectsComponent } from '../components/projects/projects.component';
-import { ResearchPublicationsComponent } from '../components/research-publications/research-publications.component';
-import { AwardsComponent } from '../components/awards/awards.component';
-import { ContactUsComponent } from '../components/contact-us/contact-us.component';
-import { WhoWeAreComponent } from '../components/who-we-are/who-we-are.component';
-import { WhatWeDoComponent } from '../components/what-we-do/what-we-do.component';
-import { OurClientsComponent } from '../components/our-clients/our-clients.component';
+import { ResearchPublicationsComponent } from '../research-publications/research-publications.component';
+import { WhoWeAreComponent } from '../who-we-are/who-we-are.component';
+import { WhatWeDoComponent } from '../what-we-do/what-we-do.component';
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
+import { HomeComponent } from '../home/home.component';
+import { OurClientsComponent } from '../our-clients/our-clients.component';
+import { ProjectsComponent } from '../projects/projects.component';
+import { AwardsComponent } from '../awards/awards.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 
 
 const routes: Routes = [

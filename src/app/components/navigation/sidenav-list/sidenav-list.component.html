@@ -8,9 +8,9 @@
       <a matline>About us</a>
     </mat-list-item>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="onSidenavClose()">Who are we</button>
-      <button mat-menu-item (click)="onSidenavClose()">What we do</button>
-      <button mat-menu-item (click)="onSidenavClose()">Our clients</button>
+      <button mat-menu-item (click)="onSidenavClose()" routerLink='/who-we-are'>Who we are</button>
+      <button mat-menu-item (click)="onSidenavClose()" routerLink='/what-we-do'>What we do</button>
+      <button mat-menu-item (click)="onSidenavClose()" routerLink='/our-clients'>Our clients</button>
     </mat-menu>
 
     <a mat-list-item routerLink="/projects" (click)="onSidenavClose()">
