@@ -1,0 +1,39 @@
+.about-me {
+  max-width: 500px;
+}
+
+.image-container{
+  flex: 1 1 50%;
+  min-width: 80px;
+  max-width: 150px;
+}
+
+.image {
+  height: 100%
+}
+
+.description {
+  min-width: 200px;
+}
+
+.member {
+  height: 200px;
+}
+
+.avatar {
+  width: 200px;
+  padding: 10px;
+}
+
+.circle {
+  width: 100%;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}

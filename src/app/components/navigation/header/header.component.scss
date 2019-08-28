@@ -1,4 +1,4 @@
-@import 'src/variables.scss';
+@import "src/variables.scss";
 
 a {
   text-decoration: none;
@@ -10,23 +10,23 @@ a:active {
   color: $accent;
 }
 
+
 .navigation-items {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.mat-menu {
-  background-color: "red"
+
+.logo {
+  height: 100%;
 }
 
-mat-toolbar {
-  border-radius: 3px;
-  flex: 1 1 auto;
+.toolbar-item {
+  height: 100%
 }
 
-@media (max-width: 959px) {
-  mat-toolbar {
-    border-radius: 0px;
-  }
+.mat-toolbar-single-row  ::ng-deep {
+  height:25vh;
+  padding: 16px;
 }

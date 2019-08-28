@@ -5,20 +5,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { AwardsModule } from './awards/awards.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HeaderComponent } from './components/navigation/header/header.component';
 import { SidenavListComponent } from './components/navigation/sidenav-list/sidenav-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ContactUsModule } from './contact-us/contact-us.module';
-import { HomeModule } from './home/home.module';
-import { MaterialModule } from './material/material.module';
-import { OurClientsModule } from './our-clients/our-clients.module';
-import { ProjectsModule } from './projects/projects.module';
-import { ResearchPublicationsModule } from './research-publications/research-publications.module';
-import { RoutingModule } from './routing/routing.module';
-import { WhatWeDoModule } from './what-we-do/what-we-do.module';
-import { WhoWeAreModule } from './who-we-are/who-we-are.module';
+import { AwardsModule } from './modules/awards/awards.module';
+import { ContactUsModule } from './modules/contact-us/contact-us.module';
+import { HomeModule } from './modules/home/home.module';
+import { MaterialModule } from './modules/material/material.module';
+import { OurClientsModule } from './modules/our-clients/our-clients.module';
+import { ProjectsModule } from './modules/projects/projects.module';
+import { ResearchPublicationsModule } from './modules/research-publications/research-publications.module';
+import { RoutingModule } from './modules/routing/routing.module';
+import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
+import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
 
 @NgModule({
   declarations: [

@@ -1,0 +1,33 @@
+<div fxLayout='row wrap' fxLayoutAlign="space-around" >
+  <div>
+    <div fxLayout='row' class='about-me'>
+      <img class="avatar" src="assets/img/nisha.jpg" />
+
+      <p class='description'>
+        I love being my own boss, I have nobody to answer to. <br>
+        I can hire any interns and make they work for free! <br>
+        hahahahahahaha
+
+      </p>
+    </div>
+    <div>
+      <h3>Team</h3>
+
+      <div fxLayout>
+        <div *ngFor="let member of members" class="member" fxLayout='column' fxLayoutAlign='center center'>
+          <span>{{member.name}}</span>
+          <span>{{member.role}}</span>
+          <img src="assets/img/little-guy.jpg" class="image" />
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div  class='grid competencies'>
+    <div *ngFor="let competency of competencies" class='image-container'>
+      <img src="assets/img/cleo.jpg" class="circle" />
+    </div>
+  </div>
+</div>

@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /* for sidenav to take whole page */
+
 html, body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+
+mat-toolbar .no-background {
+  background: none;
 }
