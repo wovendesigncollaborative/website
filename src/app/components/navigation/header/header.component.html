@@ -1,18 +1,19 @@
-<mat-toolbar class='no-background'>
+<mat-toolbar class="black-line">
 
  <!--  <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div> -->
-  <div fxLayout fxHide.xs class='toolbar-item' fxFlexFill>
-      <img class='toolbar-item' src="assets/img/logo.png"/>
-    <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto">
+
+  <div fxLayout fxHide.xs class='toolbar-item' fxFlexFill >
+      <img class='logo' src="assets/img/logo.png"/>
+    <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto" >
       <li>
-        <a routerLink="/home">Home</a>
+        <a class="link" routerLink="/home">Home</a>
       </li>
       <li [matMenuTriggerFor]="menu">
-        <a> About Us</a>
+        <a class="link" > About Us</a>
         <mat-menu #menu="matMenu" class="mat-menu">
           <button mat-menu-item routerLink="/who-we-are">Who are we</button>
           <button mat-menu-item routerLink="/what-we-do">What we do</button>
@@ -20,18 +21,20 @@
         </mat-menu>
       </li>
       <li>
-        <a routerLink="/projects">Projects</a>
+        <a class="link"routerLink="/projects">Projects</a>
       </li>
       <li>
-        <a routerLink="/research-and-publications">Research and Publications</a>
+        <a class="link" routerLink="/research-and-publications">Research and Publications</a>
       </li>
       <li>
-        <a routerLink="/awards">Awards</a>
+        <a class="link" routerLink="/awards">Awards</a>
       </li>
-      <li>
-        <a routerLink="/contact-us">Contact us</a>
-      </li>
+
     </ul>
+    <div class="btn-connect transparent-black-line " fxLayout="column" fxLayoutAlign="end center" fxFlex="0 0 275px"	>
+      <a class="link white-text" routerLink="/contact-us">Connect with Us</a>
+    </div>
   </div>
 
 </mat-toolbar>
+

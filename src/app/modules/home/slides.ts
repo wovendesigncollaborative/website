@@ -2,7 +2,7 @@
 
 export const HOME_PAGE_SLIDES = [
   'assets/img/strategic-spatial-planning.jpg',
-  'assets/img/sustainable-development.png',
+  'assets/img/sustainable-development.jpg',
   'assets/img/agriculture-and-urbanism.jpg',
   'assets/img/integrated-approach.jpg'
 ];
@@ -36,6 +36,14 @@ export const HOME_PAGE_TEXTS = [
   strategy.
   `
 ];
+
+export const HOME_PAGE_TITLES = [
+  'strategic spatial planning',
+  'sustainable development',
+  'agriculture and urbanism',
+  'integrated approach and finally nisha is not that great'
+];
+
 
 
 

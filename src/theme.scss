@@ -1,7 +1,10 @@
-@import '~@angular/material/theming';
-@import 'src/variables.scss';
+@import "~@angular/material/theming";
+@import "src/variables.scss";
 @include mat-core();
 
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 @include angular-material-theme($app-theme);
+.mat-toolbar {
+  background: white;
+}

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'research-and-publications', component: ResearchPublicationsComponent },
   { path: 'awards', component: AwardsComponent },
-  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'connect-with-us', component: ContactUsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

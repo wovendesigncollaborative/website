@@ -1,28 +1,39 @@
 .text-container {
-  padding: 10px
+  padding: 16px
 }
 
 .slideshow-container {
-  position:relative;
+  position: relative;
 }
 
-.text-container {
+.title-container {
   position: absolute;
-  width: 25%;
-  top: 0;
-  right: 10%;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
+  left: 0;
+  top: 420px;
+  right: calc(275px + 5vw);
+}
 
+.title {
+  padding: 0 12px;
+  text-align: center;
+}
+
+.legend-container {
+  position: absolute;
+  width: 275px;
+  top: 0;
+  right: 5vw;
+  bottom: 0;
+  background: rgba(0,0,0,0.62);
 }
 
 .legend {
   padding: 8px;
   color:rgb(255, 255,255, 0.8);
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: justify;
   text-align-last: left;
-  overflow:auto;
+  overflow: auto;
 }
 
 /* width */

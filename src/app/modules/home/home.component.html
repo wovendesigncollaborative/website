@@ -1,11 +1,15 @@
 <div class='slideshow-container'>
   <div>
-    <slideshow [height]="'70vh'" [autoPlay]="true" [showArrows]="true" [showDots]="true" [imageUrls]="slides"
+    <slideshow  autoPlay="true"   [imageUrls]="slides"
       [lazyLoad]="slides?.length > 1" [autoPlayWaitForLazyLoad]="true" (onIndexChanged)="swipeTextSlide($event)"
-      [autoPlayInterval]="10000">
+      [autoPlayInterval]="10000" showDots="true" height="550px"
+      >
     </slideshow>
   </div>
-  <div class='text-container'>
+  <div class='legend-container'>
     <p fxFlex="row wrap" fxLayoutAlign='center' class='legend'>{{legend}}</p>
+  </div>
+  <div  class='title-container'>
+    <div  fittext class='title'>{{title | uppercase}}</div>
   </div>
 </div>

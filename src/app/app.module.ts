@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { FooterComponent } from './components/navigation/footer/footer.component';
 import { HeaderComponent } from './components/navigation/header/header.component';
 import { SidenavListComponent } from './components/navigation/sidenav-list/sidenav-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -27,6 +28,7 @@ import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
     HeaderComponent,
     SidenavListComponent,
     PageNotFoundComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
