@@ -1,15 +1,14 @@
 <div class='slideshow-container'>
-  <div>
-    <slideshow  autoPlay="true"   [imageUrls]="slides"
-      [lazyLoad]="slides?.length > 1" [autoPlayWaitForLazyLoad]="true" (onIndexChanged)="swipeTextSlide($event)"
-      [autoPlayInterval]="10000" showDots="true" height="550px"
-      >
-    </slideshow>
+
+  <slideshow autoPlay="true" [imageUrls]="slides" [lazyLoad]="slides?.length > 1" [autoPlayWaitForLazyLoad]="true"
+    (onIndexChanged)="swipeTextSlide($event)" [autoPlayInterval]="10000" showDots="true"
+    minHeight="300px">
+  </slideshow>
+
+  <div class='description-container'>
+    <p fxFlex="row wrap" fxLayoutAlign='center' class='description'>{{description}}</p>
   </div>
-  <div class='legend-container'>
-    <p fxFlex="row wrap" fxLayoutAlign='center' class='legend'>{{legend}}</p>
-  </div>
-  <div  class='title-container'>
-    <div  fittext class='title'>{{title | uppercase}}</div>
-  </div>
+  <h2 class='title-container'>
+    <div fittext="true" activateOnResize="true" [modelToWatch]="title" class='title'>{{title | uppercase}}</div>
+  </h2>
 </div>

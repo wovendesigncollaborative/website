@@ -1,12 +1,12 @@
-<mat-toolbar class="black-line">
+<mat-toolbar >
 
- <!--  <div fxHide.gt-xs>
+ <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-  </div> -->
+  </div>
 
-  <div fxLayout fxHide.xs class='toolbar-item' fxFlexFill >
+  <div fxLayout fxHide.xs class="toolbar-item black-line" fxFlexFill >
       <img class='logo' src="assets/img/logo.png"/>
     <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto" >
       <li>
@@ -29,9 +29,8 @@
       <li>
         <a class="link" routerLink="/awards">Awards</a>
       </li>
-
     </ul>
-    <div class="btn-connect transparent-black-line " fxLayout="column" fxLayoutAlign="end center" fxFlex="0 0 275px"	>
+    <div class="black-panel white-line" fxLayout="column" fxLayoutAlign="end center" fxFlex="0 0 275px"	>
       <a class="link white-text" routerLink="/contact-us">Connect with Us</a>
     </div>
   </div>

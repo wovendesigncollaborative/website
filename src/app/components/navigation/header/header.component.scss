@@ -3,6 +3,7 @@
 a {
   text-decoration: none;
   color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a:hover,
@@ -18,8 +19,7 @@ a:active {
 
 .logo {
   height: 100%;
-  padding-left: 6px;
-  padding-top: 6px;
+  padding-top: 16px;
   box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@ a:active {
   height:140px;
 }
 
-.btn-connect{
+.black-panel{
   background: rgba(0,0,0,0.62);
   height: 100%;
   margin-right: 5vw;
@@ -46,9 +46,10 @@ a:active {
 
 .black-line {
   border-bottom: 3px solid rgba(0,0,0);
-  .transparent-black-line {
-    border-bottom: 3px solid white
-  }
+}
+
+.white-line {
+  border-bottom: 3px solid white
 }
 
 .link {

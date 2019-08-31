@@ -4,13 +4,15 @@
 
 .slideshow-container {
   position: relative;
+  height: 100%;
 }
 
 .title-container {
   position: absolute;
   left: 0;
-  top: 420px;
+  top: 75%;
   right: calc(275px + 5vw);
+  height: 80px;
 }
 
 .title {
@@ -18,7 +20,7 @@
   text-align: center;
 }
 
-.legend-container {
+.description-container {
   position: absolute;
   width: 275px;
   top: 0;
@@ -27,13 +29,14 @@
   background: rgba(0,0,0,0.62);
 }
 
-.legend {
+.description {
   padding: 8px;
   color:rgb(255, 255,255, 0.8);
   font-size: 1.2em;
   text-align: justify;
   text-align-last: left;
   overflow: auto;
+
 }
 
 /* width */

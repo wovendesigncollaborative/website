@@ -41,7 +41,7 @@ export const HOME_PAGE_TITLES = [
   'strategic spatial planning',
   'sustainable development',
   'agriculture and urbanism',
-  'integrated approach and finally nisha is not that great'
+  'integrated approach'
 ];
 
 

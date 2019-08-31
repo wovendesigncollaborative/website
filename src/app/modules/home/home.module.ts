@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {AngularFittextModule} from 'angular-fittext';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { TeximateModule } from 'ngx-teximate';
 import { HomeComponent } from './home.component';
+import {Ng2FittextModule} from "ng2-fittext";
 
 @NgModule({
   declarations: [HomeComponent],
@@ -13,7 +13,7 @@ import { HomeComponent } from './home.component';
     SlideshowModule,
     TeximateModule,
     FlexLayoutModule,
-    AngularFittextModule,
+    Ng2FittextModule,
   ]
 })
 export class HomeModule { }

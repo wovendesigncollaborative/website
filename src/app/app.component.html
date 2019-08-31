@@ -5,12 +5,15 @@
       <app-sidenav-list (sidenaveClose)="sidenav.close()"></app-sidenav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <!--in here all the content must reside. We will add a navigation header as well-->
-      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-      <main>
-        <router-outlet></router-outlet>
-      </main>
-      <app-footer></app-footer>
+      <div fxLayout="column">
+        <!--in here all the content must reside. We will add a navigation header as well-->
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main class='main'>
+          <router-outlet></router-outlet>
+        </main>
+        <app-footer></app-footer>
+      </div>
+
     </mat-sidenav-content>
   </mat-sidenav-container>
 </app-layout>

@@ -687,13 +687,6 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
-angular-fittext@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/angular-fittext/-/angular-fittext-2.1.1.tgz#533ed6abe2bc6d3d45bae6775f3db41ef1baed08"
-  integrity sha512-z2jEwSSjn7jLQik9DcBKZDDMSzn+Hltf0c5t2pMY9Vxf80vkpvaerPfUnU4d5oGDDQeWtuZnva2kS0bjZlPVpw==
-  dependencies:
-    tslib "^1.9.0"
-
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -4352,6 +4345,11 @@ ng-simple-slideshow@^1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/ng-simple-slideshow/-/ng-simple-slideshow-1.2.9.tgz#384706ea76ed859c77927fd3b0585aba20d9a034"
   integrity sha512-05bLd9pWFAIhlOuScO1FOhCubNm9oZ3HK7fJ0oZgn9m9kl257yxXQv/1fBsVrCu0v/25zQRGRS9EgkX5UXhJdQ==
+
+ng2-fittext@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/ng2-fittext/-/ng2-fittext-1.2.6.tgz#34bcb60a93b5c2c6d9065f7a4aac8c43d507ad86"
+  integrity sha512-g61tP5kMNbGV/olYRW3qXN40s1HhjBgyyOt9l1T2VpAYWCGhzFiB9xA48N5/GVvsW3MdZyJ9Hdl+1lpb+bmbGg==
 
 ngx-teximate@^0.3.0:
   version "0.3.0"
