@@ -1,18 +1,22 @@
+@import "src/variables.scss";
+
 .text-container {
   padding: 16px
 }
 
 .slideshow-container {
+  padding: 14px 0;
   position: relative;
   height: 100%;
+  box-sizing: border-box
 }
 
 .title-container {
   position: absolute;
   left: 0;
-  top: 75%;
-  right: calc(275px + 5vw);
-  height: 80px;
+  top: 70%;
+  right: calc( #{$black-panel-width} + #{$black-panel-offset-right});
+  height: 20%;
 }
 
 .title {
@@ -22,7 +26,7 @@
 
 .description-container {
   position: absolute;
-  width: 275px;
+  width:  $black-panel-width;
   top: 0;
   right: 5vw;
   bottom: 0;
@@ -36,7 +40,6 @@
   text-align: justify;
   text-align-last: left;
   overflow: auto;
-
 }
 
 /* width */

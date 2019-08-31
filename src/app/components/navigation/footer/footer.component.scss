@@ -1,3 +1,5 @@
+@import "src/variables.scss";
+
 .footer {
   height: 80px;
   position: relative;
@@ -7,9 +9,9 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.62);
   height: 100%;
-  right: 5vw;
+  right: $black-panel-offset-right;
   box-sizing: content-box;
-  width: 275px;
+  width: $black-panel-width;
 }
 
 .white-line {
@@ -23,7 +25,7 @@
 .copyright {
   position: absolute;
   top: 0;
-  right: calc(275px + 5vw);
+  right: calc(#{$black-panel-width} + #{$black-panel-offset-right});
   bottom: 0;
   margin-right: 8px;
 }

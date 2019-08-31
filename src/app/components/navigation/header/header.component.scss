@@ -19,8 +19,9 @@ a:active {
 
 .logo {
   height: 100%;
-  padding-top: 16px;
-  box-sizing: border-box;
+  background-image: url('src/assets/img/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .toolbar-item {
@@ -28,13 +29,15 @@ a:active {
 }
 
 .mat-toolbar-single-row  ::ng-deep {
+  margin-top:16px;
   height:140px;
 }
 
 .black-panel{
   background: rgba(0,0,0,0.62);
+  flex: 0 0 $black-panel-width ;
   height: 100%;
-  margin-right: 5vw;
+  margin-right: $black-panel-offset-right;
   box-sizing: content-box !important
 }
 
