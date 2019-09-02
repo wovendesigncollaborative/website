@@ -1,9 +1,11 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { state, trigger, style, transition, animate } from '@angular/animations';
+import { isAbsolute } from 'path';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
 
@@ -11,8 +13,6 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
   public onToggleSidenav = () => {
     this.sidenavToggle.emit();

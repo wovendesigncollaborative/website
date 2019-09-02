@@ -1,39 +1,25 @@
-.about-me {
-  max-width: 500px;
+@mixin lhCrop($line-height, $capital-letter: 1) {
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+  }
 }
 
-.image-container{
-  flex: 1 1 50%;
-  min-width: 80px;
-  max-width: 150px;
+.photo {
+
+  width: 200px;
+  align-self: flex-start
 }
 
-.image {
-  height: 100%
+.right {
+  display: block;
+  text-align: end;
 }
 
 .description {
-  min-width: 200px;
+  margin: 0 12px;
 }
 
-.member {
-  height: 200px;
-}
-
-.avatar {
-  width: 200px;
-  padding: 10px;
-}
-
-.circle {
-  width: 100%;
-  margin: 5px;
-  border-radius: 50%;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}

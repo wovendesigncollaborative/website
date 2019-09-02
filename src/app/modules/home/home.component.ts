@@ -17,6 +17,7 @@ export class HomeComponent {
 
   description = HOME_PAGE_TEXTS[0];
   title = HOME_PAGE_TITLES[0];
+  index;
 
 
   constructor(public cdr: ChangeDetectorRef) {
@@ -27,6 +28,7 @@ export class HomeComponent {
 
 
   swipeTextSlide(index) {
+    this.index = index;
     this.description = this.descriptions[index];
     this.title = this.titles[index];
   }

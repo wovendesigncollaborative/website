@@ -20,6 +20,7 @@ import { ResearchPublicationsModule } from './modules/research-publications/rese
 import { RoutingModule } from './modules/routing/routing.module';
 import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
 import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
+import { LoadingPageComponent } from './components/loading-page/loading-page.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
     SidenavListComponent,
     PageNotFoundComponent,
     FooterComponent,
+    LoadingPageComponent,
   ],
   imports: [
     BrowserModule,

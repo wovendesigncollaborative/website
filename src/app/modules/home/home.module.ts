@@ -6,6 +6,7 @@ import { TeximateModule } from 'ngx-teximate';
 import { HomeComponent } from './home.component';
 import {Ng2FittextModule} from "ng2-fittext";
 
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [

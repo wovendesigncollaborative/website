@@ -16,7 +16,7 @@
   left: 0;
   top: 70%;
   right: calc( #{$black-panel-width} + #{$black-panel-offset-right});
-  height: 20%;
+  height: 80px;
 }
 
 .title {
@@ -40,6 +40,10 @@
   text-align: justify;
   text-align-last: left;
   overflow: auto;
+}
+
+.white-text {
+  color: white;
 }
 
 /* width */

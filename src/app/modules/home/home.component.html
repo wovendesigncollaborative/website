@@ -8,7 +8,9 @@
   <div class='description-container'>
     <p fxFlex="row wrap" fxLayoutAlign='center' class='description'>{{description}}</p>
   </div>
-  <h2 class='title-container'>
+  <h2 class='title-container' [ngClass]="{'white-text': index===2}">
     <div fittext="true" activateOnResize="true" [modelToWatch]="title" class='title'>{{title | uppercase}}</div>
   </h2>
 </div>
+
+
