@@ -1,6 +1,6 @@
 @mixin lhCrop($line-height, $capital-letter: 1) {
   &::before {
-    content: '';
+    content: "";
     display: block;
     height: 0;
     width: 0;
@@ -9,9 +9,8 @@
 }
 
 .photo {
-
   width: 200px;
-  align-self: flex-start
+  align-self: flex-start;
 }
 
 .right {
@@ -22,4 +21,3 @@
 .description {
   margin: 0 12px;
 }
-

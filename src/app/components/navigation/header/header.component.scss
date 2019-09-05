@@ -3,7 +3,7 @@
 a {
   text-decoration: none;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover,
@@ -25,37 +25,33 @@ a:active {
   height: 100%;
 }
 
-.mat-toolbar-single-row  ::ng-deep {
-  margin-top:16px;
-  height:140px;
+.mat-toolbar-single-row ::ng-deep {
+  margin-top: 16px;
+  height: 140px;
 }
 
-.black-panel{
-  background: rgba(0,0,0,0.62);
-  flex: 0 0 $black-panel-width ;
+.black-panel {
+  background: rgba(0, 0, 0, 0.62);
+  flex: 0 0 $black-panel-width;
   height: 100%;
   margin-right: $black-panel-offset-right;
-  box-sizing: content-box !important
+  box-sizing: content-box !important;
 }
 
 .white-text {
-  color:rgb(255, 255,255, 1);
+  color: rgb(255, 255, 255, 1);
   margin-bottom: 3px;
   font-weight: bold;
 }
 
 .black-line {
-  border-bottom: 3px solid rgba(0,0,0);
+  border-bottom: 3px solid rgba(0, 0, 0);
 }
 
 .white-line {
-  border-bottom: 3px solid white
+  border-bottom: 3px solid white;
 }
 
 .link {
-  font-size: 0.8em
+  font-size: 0.8em;
 }
-
-
-
-

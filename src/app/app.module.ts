@@ -13,14 +13,13 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AwardsModule } from './modules/awards/awards.module';
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HomeModule } from './modules/home/home.module';
+import { HowWeWorkModule } from './modules/how-we-work/how-we-work.module';
 import { MaterialModule } from './modules/material/material.module';
-import { OurClientsModule } from './modules/our-clients/our-clients.module';
 import { ProjectsModule } from './modules/projects/projects.module';
 import { ResearchPublicationsModule } from './modules/research-publications/research-publications.module';
 import { RoutingModule } from './modules/routing/routing.module';
 import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
 import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
-import { LoadingPageComponent } from './components/loading-page/loading-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { LoadingPageComponent } from './components/loading-page/loading-page.com
     SidenavListComponent,
     PageNotFoundComponent,
     FooterComponent,
-    LoadingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +41,7 @@ import { LoadingPageComponent } from './components/loading-page/loading-page.com
     AwardsModule,
     ContactUsModule,
     HomeModule,
-    OurClientsModule,
+    HowWeWorkModule,
     ProjectsModule,
     ResearchPublicationsModule,
     WhatWeDoModule,

@@ -1,27 +1,27 @@
-<mat-toolbar >
+<mat-toolbar>
 
- <div fxHide.gt-xs>
+  <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
 
   <div fxLayout fxHide.xs class="toolbar-item black-line" fxFlex="1 0 auto">
-      <img class='logo' src="assets/img/logo.png" />
-    <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto" >
+    <img class='logo' src="assets/img/logo.png" />
+    <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto">
       <li>
         <a class="link" routerLink="/home">Home</a>
       </li>
       <li [matMenuTriggerFor]="menu">
-        <a class="link" > About Us</a>
+        <a class="link"> About Us</a>
         <mat-menu #menu="matMenu" class="mat-menu">
           <button mat-menu-item routerLink="/who-we-are">Who we are</button>
           <button mat-menu-item routerLink="/what-we-do">What we do</button>
-          <button mat-menu-item routerLink="/our-clients">Our clients</button>
+          <button mat-menu-item routerLink="/how-we-work">How we work</button>
         </mat-menu>
       </li>
       <li>
-        <a class="link"routerLink="/projects">Projects</a>
+        <a class="link" routerLink="/projects">Projects</a>
       </li>
       <li>
         <a class="link" routerLink="/research-and-publications">Research and Publications</a>
@@ -36,4 +36,3 @@
   </div>
 
 </mat-toolbar>
-

@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhoWeAreComponent implements OnInit {
 
- competencies = ['Coffee', 'Cleaning', 'Humor', 'Eating', 'Shouting', 'Complaining'];
- members = [{
-   name: 'Paul Dejean',
-   role: 'Developer'
- },
- {
-  name: 'Chitraa Raj',
-  role: 'Chai maker'
-}];
+  competencies = ['Coffee', 'Cleaning', 'Humor', 'Eating', 'Shouting', 'Complaining'];
+  members = [{
+    name: 'Paul Dejean',
+    role: 'Developer'
+  },
+  {
+    name: 'Chitraa Raj',
+    role: 'Chai maker'
+  }];
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
-import { HOME_PAGE_SLIDES, HOME_PAGE_TEXTS , HOME_PAGE_TITLES} from './slides';
+import { HOME_PAGE_SLIDES, HOME_PAGE_TEXTS, HOME_PAGE_TITLES } from './slides';
 
 
 
