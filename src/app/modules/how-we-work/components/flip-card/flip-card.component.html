@@ -1,11 +1,10 @@
-<div [style.width]="radius" [style.height]="radius" class="flip-card-inner circle">
+<div class="flip-card-inner circle">
   <div class="flip-card-front circle">
     <img [src]="imageSrc" class="circle">
   </div>
-  <div fxLayout fxLayoutAlign="center center" class="flip-card-back circle" [style.backgroundColor]="backgroundColor">
+  <div fxLayout fxLayoutAlign="center center" class="flip-card-back circle" [ngClass]="backgroundColor">
     <p>
       <ng-content></ng-content>
-    </p>>
+    </p>
   </div>
-</div>
 </div>

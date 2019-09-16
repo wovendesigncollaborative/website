@@ -11,6 +11,7 @@
   height: 100%;
   right: $black-panel-offset-right;
   width: $black-panel-width;
+  box-sizing: border-box;
 }
 
 .white-line {
