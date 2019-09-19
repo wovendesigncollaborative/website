@@ -1,59 +1,25 @@
-<div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="20px">
+<div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+  <div fxLayout fxLayoutAlign="center center" [@fall]="falling ? 'start' : 'end'">
 
-  <expansion-card imageSrc="assets/img/regional-planning.jpg">
-    <ng-container primary-title>Regional Planning and Development Strategy</ng-container>
-    <ng-container secondary-title>Planning goes beyond administrative boundaries</ng-container>
-    <ng-container description>WDC has an expert team that understands the socio-economic,
-      environmental and logistical linkages that make a settlement. With an integrated vision in mind, strategic plans
-      are made in a cross-disciplinary approach that tackles socio-economic, ecological and other relevant challenges
-      that work towards increased quality of life.</ng-container>
-  </expansion-card>
+    <img [@imageAnimation]="imageAnimation ? 'start' : 'end'" class="image" [src]="imageSrc">
 
-  <expansion-card imageSrc="assets/img/urban-design.jpg">
-    <ng-container primary-title>Urban & Public Space Design</ng-container>
-    <ng-container secondary-title>Urban Commons that speak to the public</ng-container>
-    <ng-container description>As cities get denser, and the value of space soars, innovative solutions are required to
-      give the city back to its people. Our design team understands the complexities of urbanism, and design city and
-      neighbourhood scale spaces accordingly. We design safe and interactive public space design with a focus on
-      human-nature balance. </ng-container>
-  </expansion-card>
+  </div>
+  <div fxLayout="row nowrap" fxLayoutAlign="center" class='container'>
 
-  <expansion-card imageSrc="assets/img/rural-development.jpg">
-    <ng-container primary-title>Rural development</ng-container>
-    <ng-container secondary-title>Balancing rurality and development</ng-container>
-    <ng-container description>Breaking away from a compartmentalised outlook, we approach development contextually, to
-      bring sustainable livelihood opportunity to rural areas, while preserving the environment and building a cohesive
-      and empowered community. Redefining the meaning of “development” WDC shifts the focus towards increased quality of
-      life and empowerment so as to dissuade unsustainable migration and increasing community ownership. With a
-      future-centric, integrated and multi-disciplinary approach, we enable communities to direct their own growth.
-    </ng-container>
-  </expansion-card>
+    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
+      src=" assets/img/regional-planning.jpg" (click)="onImageClick()">
 
-  <expansion-card imageSrc="assets/img/environmental-planning.jpg">
-    <ng-container primary-title>Environmental Planning & Natural Ressource Management</ng-container>
-    <ng-container secondary-title>Environmental management ensures that existing forest systems, wildlife corridors,
-      watershed and ecological patterns are balanced with the needs and wants of a human settlement.
-    </ng-container>
-    <ng-container description> Generating a comprehensive plan for the whole region (or just a site), identifying the
-      different types of eco-systems and the complexity of their inter-relationship and developing a toolkit for
-      implementation. The plan shall identify lands for different types of plantations and ecosystems in line with the
-      natural system that the region hosts. The toolkit shall enable local community and implementation partners to
-      choose appropriate species and planting, irrigation and maintenance techniques for maximum benefit- both
-      ecologically and agriculturally.
-    </ng-container>
-  </expansion-card>
+    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
+      src="assets/img/urban-design.jpg" (click)="onImageClick()">
 
-  <expansion-card imageSrc="assets/img/social-development.jpg">
-    <ng-container primary-title>Social Development</ng-container>
-    <ng-container secondary-title>WDC works with a cross-disciplinary team and a multi-pronged approach to create a
-      vision for community and break it down to achievable actions.
-    </ng-container>
-    <ng-container description> Understanding that a society is built on individual
-      aspirations, WDC works together with the community, to bring a holistic development of their lives and habitat.
-    </ng-container>
-  </expansion-card>
+    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
+      src="assets/img/rural-development.jpg" (click)="onImageClick()">
 
+    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
+      src="assets/img/environmental-planning.jpg" (click)="onImageClick()">
 
+    <img [@shrink]="shrink ? 'start' : 'end'" class='circle' src="assets/img/social-development.jpg"
+      (click)="onImageClick()">
 
-
+  </div>
 </div>
