@@ -1,0 +1,23 @@
+<div fxLayout="column" fxLayoutGap="4px" [ngStyle]="{'width': width, 'height' : height}" class='card'>
+  <div class="image-container">
+    <!-- [ngStyle]="{'background-image': 'url(' + imageSrc + ')'}"> -->
+    <img [src]="imageSrc" style="width: 100%">
+    <div class='date'>
+      {{date}}
+    </div>
+  </div>
+
+
+  <ng-content select="h2"></ng-content>
+
+  <ng-content select="[description]"></ng-content>
+
+  <ng-content class="award" select="h4"></ng-content>
+
+  <div class="know-more">
+    <a [href]="knowMoreLink" target="_blank">know more</a>
+  </div>
+
+
+
+</div>

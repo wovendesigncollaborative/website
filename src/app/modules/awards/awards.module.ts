@@ -1,11 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AwardsComponent } from './awards.component';
+import { AwardCardComponent } from './components/award-card/award-card.component';
 
 @NgModule({
-  declarations: [AwardsComponent],
+  declarations: [AwardsComponent, AwardCardComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule,
   ]
 })
 export class AwardsModule { }

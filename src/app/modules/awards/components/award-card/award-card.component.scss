@@ -1,0 +1,54 @@
+$spacing: 10px;
+
+.card {
+  position: relative;
+  padding: $spacing;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.date {
+  background-color: white;
+  padding: 4px 16px;
+  left: 0px;
+  bottom: 4px;
+  position: absolute;
+  border-radius: 0 5px 0 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.margin {
+  margin: 0px 2px;
+}
+
+::ng-deep h2,
+::ng-deep h4 {
+  margin: 0;
+  color: gold;
+}
+
+::ng-deep p {
+  margin: 0;
+}
+
+.know-more {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  padding: 4px 8px;
+  bottom: 0;
+  right: $spacing;
+}
+
+a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.know-more:hover a {
+  border-bottom: 2px solid white;
+}
