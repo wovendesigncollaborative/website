@@ -1,25 +1,16 @@
 <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-  <div fxLayout fxLayoutAlign="center center" [@fall]="falling ? 'start' : 'end'">
+  <div fxLayout fxLayoutAlign="center center" [@fall]="hasClickedOnce ? 'end' : 'start'">
 
-    <img [@imageAnimation]="imageAnimation ? 'start' : 'end'" class="image" [src]="imageSrc">
+    <img [@fadingIn]="fadingIn ? 'end' : 'start'" class="image" [src]="imageSrc">
 
   </div>
   <div fxLayout="row nowrap" fxLayoutAlign="center" class='container'>
 
-    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
-      src=" assets/img/regional-planning.jpg" (click)="onImageClick()">
-
-    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
-      src="assets/img/urban-design.jpg" (click)="onImageClick()">
-
-    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
-      src="assets/img/rural-development.jpg" (click)="onImageClick()">
-
-    <img [@shrink]="shrink ? 'start' : 'end'" [@spacing]="shrink ? 'start' : 'end'" class='circle'
-      src="assets/img/environmental-planning.jpg" (click)="onImageClick()">
-
-    <img [@shrink]="shrink ? 'start' : 'end'" class='circle' src="assets/img/social-development.jpg"
-      (click)="onImageClick()">
+    <ng-container *ngFor="let url of images; let i = index">
+      <img [@shrink]="hasClickedOnce ? 'end' : 'start'" [@spacing]="hasClickedOnce
+      ? 'end' : 'start'" class='circle' src="{{url}}" (click)="onImageClick(i)"
+        [ngClass]="{'grey': fadingIn &&  indexSelected === i }">
+    </ng-container>
 
   </div>
 </div>

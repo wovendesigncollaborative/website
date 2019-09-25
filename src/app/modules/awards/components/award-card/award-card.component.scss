@@ -25,13 +25,13 @@ $spacing: 10px;
   margin: 0px 2px;
 }
 
-::ng-deep h2,
-::ng-deep h4 {
+::ng-deep .card h2,
+::ng-deep .card h4 {
   margin: 0;
   color: gold;
 }
 
-::ng-deep p {
+::ng-deep .card p {
   margin: 0;
 }
 

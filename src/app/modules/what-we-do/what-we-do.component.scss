@@ -5,9 +5,14 @@
 
 .image {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
 }
+
 .container {
   margin: 20px 0;
+}
+
+.grey {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
