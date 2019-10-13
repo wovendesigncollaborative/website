@@ -115,6 +115,10 @@
               "devServerTarget": "woven-design-collective:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
