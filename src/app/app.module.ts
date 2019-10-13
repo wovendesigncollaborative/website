@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/navigation/header/header.component
 import { SidenavListComponent } from './components/navigation/sidenav-list/sidenav-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AwardsModule } from './modules/awards/awards.module';
+import { ComingSoonModule } from './modules/coming-soon/coming-soon.module';
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HomeModule } from './modules/home/home.module';
 import { HowWeWorkModule } from './modules/how-we-work/how-we-work.module';
@@ -45,7 +46,8 @@ import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
     ProjectsModule,
     ResearchPublicationsModule,
     WhatWeDoModule,
-    WhoWeAreModule
+    WhoWeAreModule,
+    ComingSoonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,6 @@ import { ResearchPublicationsComponent } from '../research-publications/research
 import { WhatWeDoComponent } from '../what-we-do/what-we-do.component';
 import { WhoWeAreComponent } from '../who-we-are/who-we-are.component';
 
-
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
