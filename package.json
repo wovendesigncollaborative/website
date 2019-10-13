@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "tslint --project .",
-    "lint-fix": "tslint --fix --project .",
+    "deploy": "ng deploy --cname=wovendesigncollaborative.com",
     "e2e": "ng e2e"
   },
   "private": true,

@@ -17,12 +17,12 @@ export class WhatWeDoComponent implements OnInit {
   imageSrc = 'assets/img/nisha.jpg';
 
   images = [
-    "assets/img/regional-planning.jpg",
-    "assets/img/urban-design.jpg",
-    "assets/img/rural-development.jpg",
-    "assets/img/environmental-planning.jpg",
-    "assets/img/social-development.jpg"
-  ]
+    'assets/img/regional-planning.jpg',
+    'assets/img/urban-design.jpg',
+    'assets/img/rural-development.jpg',
+    'assets/img/environmental-planning.jpg',
+    'assets/img/social-development.jpg'
+  ];
 
   hasClickedOnce = false;
   fadingIn = false;
@@ -43,7 +43,7 @@ export class WhatWeDoComponent implements OnInit {
 
 
     this.indexSelected = index;
-    this.imageSrc = this.images[index]
+    this.imageSrc = this.images[index];
 
   }
 
