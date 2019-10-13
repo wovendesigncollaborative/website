@@ -1,10 +1,15 @@
 .column {
-   width: 75vw;
+   width: 70vw;
    height: 90%;
+   padding: 16px 0;
+}
+.page {
+    min-height: 100%;
 }
 
-
-
+p {
+    margin: 0;
+}
 .logo {
     max-width: 50vw;
     width: 300px;
