@@ -1,18 +1,33 @@
+@import "src/variables.scss";
+
+:host {
+  height : 100%
+}
+
+
+
 h2,
 h3,
 p {
   font-size: 1em;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  //font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
 h2 {
-  margin: 8px 0;
+  margin-left : 140px;
+  margin-right:  $black-panel-offset-right
 }
 
+p {
+  margin: 0 4px;
+}
+
+
+
 .grey-row {
-  margin-top: 10px;
+  padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.11);
 }
 
@@ -26,6 +41,6 @@ h2 {
 }
 
 .flip-card {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
 }

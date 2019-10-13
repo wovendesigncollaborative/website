@@ -15,11 +15,11 @@
 }
 
 .white-line {
-  border-top: 3px solid white;
+  border-top: 10px solid white;
 }
 
 .black-line {
-  border-bottom: 3px solid rgba(0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.62);
 }
 
 .copyright {
@@ -31,6 +31,6 @@
 }
 
 .footer-text {
-  font-family: "Merriweather", serif;
+  //font-family: "Merriweather", serif;
   margin-left: 6px;
 }

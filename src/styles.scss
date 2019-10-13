@@ -4,19 +4,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
-/* for sidenav to take whole page */
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
+
+/* for sidenav to take whole page */
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
   height: 100%;
+  font-family: 'Josefin Sans'
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-weight: 300;
 }

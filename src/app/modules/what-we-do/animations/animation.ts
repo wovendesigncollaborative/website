@@ -60,4 +60,22 @@ export const FADING_IN =
   ])
 
 
-
+export const SELECTED = trigger('selected', [
+  state('selected', style({
+    width: 0,
+    height: 0,
+    opacity: 0
+  })),
+  state('end', style({
+    width: "300px",
+    height: "300px",
+    opacity: 1
+  })),
+  transition('* => selected', [
+    animate("10ms ease-in-out", style({
+      width: "300px",
+      height: "300px"
+    })),
+    animate("2s ease-in-out", style({ opacity: 1 })),
+  ])
+])

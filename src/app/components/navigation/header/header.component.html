@@ -7,27 +7,35 @@
   </div>
 
   <div fxLayout fxHide.xs class="toolbar-item black-line" fxFlex="1 0 auto">
-    <img class='logo' src="assets/img/logo.png" />
+    <img class='logo' src="assets/img/logo.jpg" routerLink="/home" />
     <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto">
+
+
       <li>
-        <a class="link" routerLink="/home">Home</a>
+        <a class="link" routerLink="/who-we-are">Team</a>
       </li>
-      <li [matMenuTriggerFor]="menu">
+      <li>
+        <a class="link" routerLink="/what-we-do">Competencies</a>
+      </li>
+      <li>
+        <a class="link" routerLink="/how-we-work">Processes</a>
+      </li>
+
+
+      <!-- <li [matMenuTriggerFor]="menu">
         <a class="link"> About Us</a>
         <mat-menu #menu="matMenu" class="mat-menu">
           <button mat-menu-item routerLink="/who-we-are">Who we are</button>
           <button mat-menu-item routerLink="/what-we-do">What we do</button>
           <button mat-menu-item routerLink="/how-we-work">How we work</button>
         </mat-menu>
-      </li>
+      </li> -->
       <li>
         <a class="link" routerLink="/projects">Projects</a>
       </li>
+
       <li>
-        <a class="link" routerLink="/research-and-publications">Research and Publications</a>
-      </li>
-      <li>
-        <a class="link" routerLink="/awards">Awards</a>
+        <a class="link" routerLink="/awards">Awards & Publications</a>
       </li>
     </ul>
     <div class="black-panel white-line" fxLayout="column" fxLayoutAlign="end center">
