@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~8.2.10",
     "@angular/platform-browser-dynamic": "~8.2.10",
     "@angular/router": "~8.2.10",
+    "angular-cli-ghpages": "^0.6.0",
     "global": "^4.4.0",
     "ng-animate": "^0.3.4",
     "ng-simple-slideshow": "^1.2.9",
@@ -30,6 +31,7 @@
     "ngx-teximate": "^0.3.0",
     "rxjs": "~6.5.3",
     "tslib": "^1.9.0",
+    "typescript": "3.5.3",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -50,7 +52,6 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "^5.19.0",
-    "typescript": "^3.5.3"
+    "tslint": "^5.19.0"
   }
 }
