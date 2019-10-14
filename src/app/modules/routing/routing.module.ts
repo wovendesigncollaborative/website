@@ -13,7 +13,7 @@ import { WhoWeAreComponent } from '../who-we-are/who-we-are.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'who-we-are', component: WhoWeAreComponent },
   { path: 'what-we-do', component: WhatWeDoComponent },
   { path: 'how-we-work', component: HowWeWorkComponent },
