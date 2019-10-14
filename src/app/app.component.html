@@ -1,18 +1,7 @@
-<!--  <mat-sidenav-container>
-    <mat-sidenav #sidenav role="navigation">
-
-      <app-sidenav-list (sidenaveClose)="sidenav.close()"></app-sidenav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <div fxLayout="column" class="full-height">
-     
-        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-        <main class='main' fxFlex="1 0 auto">
-          <router-outlet></router-outlet>
-        </main>
-        <app-footer></app-footer>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container> -->
-
-<coming-soon-page></coming-soon-page>
+<div fxLayout="column" class="full-space">
+  <app-header fxFlex="none"></app-header>
+  <main class='main' fxFlex="1 0 auto">
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer fxFlex="none"></app-footer>
+</div>

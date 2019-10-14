@@ -8,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class FlipCardComponent implements OnInit {
 
   @Input() imageSrc: string;
-  @Input() radius: string;
   @Input() backgroundColor;
+  @Input() radius: string = '250px';
 
   constructor() { }
 

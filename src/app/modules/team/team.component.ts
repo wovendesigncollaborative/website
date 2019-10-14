@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-who-we-are',
-  templateUrl: './who-we-are.component.html',
-  styleUrls: ['./who-we-are.component.scss']
+  selector: 'team',
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.scss']
 })
-export class WhoWeAreComponent implements OnInit {
+
+export class TeamComponent implements OnInit {
 
   competencies = ['Coffee', 'Cleaning', 'Humor', 'Eating', 'Shouting', 'Complaining'];
   members = [{

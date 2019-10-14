@@ -13,12 +13,11 @@ p {
 
 :host {
   background-color: transparent;
+  //flex: 1 1 auto;
 }
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
   transition: transform 1.5s;
   transform-style: preserve-3d;
@@ -35,6 +34,12 @@ p {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+}
+
+.flip-card-front {
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
 }
 
 .flip-card-back {
