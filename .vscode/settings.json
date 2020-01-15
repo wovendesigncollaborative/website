@@ -1,6 +1,15 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
   }
 }

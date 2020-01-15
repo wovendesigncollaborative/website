@@ -18,6 +18,10 @@ export class TeamComponent implements OnInit {
     role: 'Chai maker'
   }];
 
+  shehla = {
+    legend: ""
+  }
+
   constructor() { }
 
   ngOnInit() {

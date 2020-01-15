@@ -1,0 +1,1 @@
+const SHEHLA_DESCRIPTION = "Shehla Hussain has over 9 years experience in Urban Planning and Design Research. With an M. arch from the university of Massachussets Amherst, her career has been focused on leading Ehnographic Studies and Analytical workshops."

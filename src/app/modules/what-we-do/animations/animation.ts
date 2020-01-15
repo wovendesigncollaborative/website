@@ -27,12 +27,12 @@ export const SHRINK =
 export const SPACING =
   trigger('spacing', [
     state('start', style({
-      marginRight: '3.5vw',
-      marginLeft: '3.5vw'
+      marginRight: '3vw',
+      marginLeft: '3vw'
     })),
     state('end', style({
-      marginRight: '2.5vw',
-      marginLeft: '2.5vw'
+      marginRight: '2vw',
+      marginLeft: '2vw'
     })),
     transition('start => end', [
       animate('2s ease-in-out')]),
