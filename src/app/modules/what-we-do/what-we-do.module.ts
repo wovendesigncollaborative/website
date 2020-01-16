@@ -5,10 +5,6 @@ import { WhatWeDoComponent } from './what-we-do.component';
 
 @NgModule({
   declarations: [WhatWeDoComponent],
-  imports: [
-    CommonModule,
-    FlexLayoutModule
-  ]
+  imports: [CommonModule, FlexLayoutModule],
 })
-
-export class WhatWeDoModule { }
+export class WhatWeDoModule {}

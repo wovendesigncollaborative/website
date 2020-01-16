@@ -8,9 +8,8 @@ describe('PhotoWithLegendComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotoWithLegendComponent ]
-    })
-    .compileComponents();
+      declarations: [PhotoWithLegendComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

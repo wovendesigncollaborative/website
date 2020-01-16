@@ -8,9 +8,8 @@ describe('ComingSoonPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ComingSoonPageComponent ]
-    })
-    .compileComponents();
+      declarations: [ComingSoonPageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

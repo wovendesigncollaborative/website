@@ -5,9 +5,6 @@ import { ProjectsComponent } from './projects.component';
 
 @NgModule({
   declarations: [ProjectsComponent],
-  imports: [
-    CommonModule,
-    FlexLayoutModule
-  ]
+  imports: [CommonModule, FlexLayoutModule],
 })
-export class ProjectsModule { }
+export class ProjectsModule {}

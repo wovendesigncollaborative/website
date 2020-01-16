@@ -3,21 +3,19 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'photo-with-legend',
   templateUrl: './photo-with-legend.component.html',
-  styleUrls: ['./photo-with-legend.component.scss']
+  styleUrls: ['./photo-with-legend.component.scss'],
 })
 export class PhotoWithLegendComponent implements OnInit {
-  @Input() direction: "column" | "column-reverse" = "column"
+  @Input() public direction: 'column' | 'column-reverse' = 'column';
 
-  @Input() width: string = "200px"
+  @Input() public width = '200px';
 
-  @Input() legend: string = "legend"
+  @Input() public legend = 'legend';
 
-  @Input() src: string
+  @Input() public src: string;
 
-  @Input() height: string = "100%"
-  constructor() { }
+  @Input() public height = '100%';
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  public ngOnInit() {}
 }

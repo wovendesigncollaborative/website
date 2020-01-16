@@ -6,9 +6,6 @@ import { ContactUsComponent } from './contact-us.component';
 
 @NgModule({
   declarations: [ContactUsComponent, FlipCardComponent],
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-  ]
+  imports: [CommonModule, FlexLayoutModule],
 })
-export class ContactUsModule { }
+export class ContactUsModule {}

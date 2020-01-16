@@ -3,16 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
+  public currentYear = new Date().getFullYear();
+  constructor() {}
 
-  currentYear = new Date().getFullYear();
-  constructor() { }
-
-  addressFirstPart = '6/1 Penthouse, Rich Homes,';
-  addressSecondPart = 'Richmond Road, Bangalore-India';
-  ngOnInit() {
-  }
-
+  public addressFirstPart = '6/1 Penthouse, Rich Homes,';
+  public addressSecondPart = 'Richmond Road, Bangalore-India';
+  public ngOnInit() {}
 }

@@ -1,10 +1,10 @@
-@import "src/variables.scss";
+@import 'src/variables.scss';
 
 a {
   text-decoration: none;
   color: black;
- // font-family: "Montserrat", sans-serif;
-  font-weight: bold
+  // font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 a:hover,
@@ -17,11 +17,10 @@ a:active {
   padding: 0;
   padding-bottom: 0px;
   margin: 0;
- 
 }
 
 .mat-toolbar {
- font-family: 'Josefin Sans'
+  font-family: 'Josefin Sans';
 }
 .logo {
   height: 100%;

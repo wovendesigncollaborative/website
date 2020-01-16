@@ -56,7 +56,9 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "^5.19.0",
+    "tslint-angular": "^3.0.2",
     "tslint-config-prettier": "^1.18.0",
+    "tslint-etc": "^1.10.0",
     "tslint-plugin-prettier": "^2.1.0"
   }
 }

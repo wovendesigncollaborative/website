@@ -1,10 +1,8 @@
-
-
 export const HOME_PAGE_SLIDES = [
   'assets/img/strategic-spatial-planning.jpg',
   'assets/img/sustainable-development.jpg',
   'assets/img/agriculture-and-urbanism.jpg',
-  'assets/img/integrated-approach.jpg'
+  'assets/img/integrated-approach.jpg',
 ];
 
 export const HOME_PAGE_TEXTS = [
@@ -34,16 +32,12 @@ export const HOME_PAGE_TEXTS = [
   of the region. Furthermore, intangible aspects such as culture, aspirations, resilience,
   traditional wisdom etc. are critical components that need to be weaved into the development
   strategy.
-  `
+  `,
 ];
 
 export const HOME_PAGE_TITLES = [
   'strategic spatial planning',
   'sustainable development',
   'agriculture and urbanism',
-  'integrated approach'
+  'integrated approach',
 ];
-
-
-
-

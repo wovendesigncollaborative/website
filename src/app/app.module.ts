@@ -19,7 +19,6 @@ import { RoutingModule } from './modules/routing/routing.module';
 import { TeamModule } from './modules/team/team.module';
 import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +44,6 @@ import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
     ComingSoonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

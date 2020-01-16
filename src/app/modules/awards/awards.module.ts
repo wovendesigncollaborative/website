@@ -6,9 +6,6 @@ import { AwardCardComponent } from './components/award-card/award-card.component
 
 @NgModule({
   declarations: [AwardsComponent, AwardCardComponent],
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-  ]
+  imports: [CommonModule, FlexLayoutModule],
 })
-export class AwardsModule { }
+export class AwardsModule {}
