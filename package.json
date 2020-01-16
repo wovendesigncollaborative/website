@@ -10,6 +10,9 @@
     "deploy": "ng deploy --cname=wovendesigncollaborative.com",
     "e2e": "ng e2e"
   },
+  "hooks": {
+    "pre-commit": "lint-staged"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^8.2.10",

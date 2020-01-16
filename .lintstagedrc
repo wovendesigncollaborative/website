@@ -1,0 +1,7 @@
+{
+  "src/**/*.+(js|ts)": [
+    "prettier --write",
+    "tslint  --project tsconfig.json"
+    "git add"
+  ]
+}
