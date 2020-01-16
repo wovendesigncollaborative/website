@@ -13,6 +13,9 @@
   "hooks": {
     "pre-commit": "lint-staged"
   },
+  "lint-staged": {
+    "*.ts": ["prettier --write", "tslint --fix", "git add"]
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^8.2.10",
