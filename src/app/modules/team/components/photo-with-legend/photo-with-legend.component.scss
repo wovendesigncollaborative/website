@@ -1,6 +1,17 @@
 .legend {
-    text-align: center;
-    width: 100%;
-    word-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
 }
 
+.text-container {
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  height: 50px;
+}
+
+.container {
+  position: relative;
+}

@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./photo-with-legend.component.scss'],
 })
 export class PhotoWithLegendComponent implements OnInit {
-  @Input() public direction: 'column' | 'column-reverse' = 'column';
 
   @Input() public width = '200px';
 
@@ -14,8 +13,8 @@ export class PhotoWithLegendComponent implements OnInit {
 
   @Input() public src: string;
 
-  @Input() public height = '100%';
-  constructor() {}
+  @Input() public height: string;
+  constructor() { }
 
-  public ngOnInit() {}
+  public ngOnInit() { }
 }

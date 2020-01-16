@@ -1,6 +1,13 @@
-<div [fxLayout]="direction" [style.width]="width" [style.height]="height">
-    <img [style.width]="width" [src]="src" fxFlex="none" />
+<div
+  fxLayout="column"
+  [style.width]="width"
+  [style.height]="height"
+  class="container"
+>
+  <img [style.width]="width" [src]="src" fxFlex="none" />
+  <div fxLayout fxLayoutAlign="center center" class="text-container">
     <span class="legend">
-        {{legend}}
+      {{ legend }}
     </span>
+  </div>
 </div>

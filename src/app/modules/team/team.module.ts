@@ -8,4 +8,4 @@ import { TeamComponent } from './team.component';
   declarations: [TeamComponent, PhotoWithLegendComponent],
   imports: [CommonModule, FlexLayoutModule],
 })
-export class TeamModule {}
+export class TeamModule { }

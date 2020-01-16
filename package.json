@@ -14,7 +14,11 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.ts": ["prettier --write", "tslint --fix", "git add"]
+    "*.ts": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ]
   },
   "private": true,
   "dependencies": {
