@@ -1,62 +1,105 @@
 <div class="full-height" fxLayout="row">
-    <div fxLayout="column" fxLayoutAlign="space-evenly center" class="full-height" fxLayoutGap="20px">
-        <h2>{{headline}}</h2>
+  <div
+    fxLayout="column"
+    fxLayoutAlign="space-evenly center"
+    class="full-height"
+    fxLayoutGap="20px"
+  >
+    <h2>{{ headline }}</h2>
 
-        <h2>{{secondHeadline}}</h2>
+    <h2>{{ secondHeadline }}</h2>
 
-        <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between" class="grey-row">
+    <div
+      fxLayout="row"
+      fxLayoutGap="20px"
+      fxLayoutAlign="space-between"
+      class="grey-row"
+    >
+      <div
+        fxLayout="column"
+        class="card"
+        fxLayoutAlign="start center"
+        fxLayoutGap="20px"
+      >
+        <h3>
+          CONSULTANCY
+        </h3>
+        <flip-card
+          class="flip-card"
+          imageSrc="assets/img/consultancy.jpg"
+          backgroundColor="yellow"
+        >
+          We do technical project based consultancy for planning development and
+          architectural services
+        </flip-card>
+      </div>
 
-            <div fxLayout="column" class='card' fxLayoutAlign="start center" fxLayoutGap="20px">
-                <h3>
-                    CONSULTANCY
-                </h3>
-                <flip-card class="flip-card" imageSrc="assets/img/consultancy.jpg" backgroundColor="yellow">
-                    We do technical project based consultancy for planning development and architectural services
-                </flip-card>
-            </div>
+      <div
+        fxLayout="column"
+        class="card"
+        fxLayoutAlign="start center"
+        fxLayoutGap="20px"
+      >
+        <h3>
+          COLLABORATION
+        </h3>
+        <flip-card
+          class="flip-card"
+          imageSrc="assets/img/collaboration.jpg"
+          backgroundColor="red"
+        >
+          WDC facilitates multi-disciplinary collaboration for complex projects
+        </flip-card>
+      </div>
 
-            <div fxLayout="column" class='card' fxLayoutAlign="start center" fxLayoutGap="20px">
-                <h3>
-                    COLLABORATION
-                </h3>
-                <flip-card class="flip-card" imageSrc="assets/img/collaboration.jpg" backgroundColor="red">
-                    WDC facilitates multi-disciplinary collaboration for complex projects
-                </flip-card>
-            </div>
+      <div
+        fxLayout="column"
+        class="card"
+        fxLayoutAlign="start center"
+        fxLayoutGap="20px"
+      >
+        <h3>
+          TECHNICAL SUPPORT
+        </h3>
+        <flip-card
+          class="flip-card"
+          imageSrc="assets/img/technical-support.jpg"
+          backgroundColor="blue"
+        >
+          WDC provides cross-disciplinary technical assistance to communities
+          and grassroot organisations on an on-going basis
+        </flip-card>
+      </div>
+    </div>
+  </div>
 
-            <div fxLayout="column" class='card' fxLayoutAlign="start center" fxLayoutGap="20px">
-                <h3>
-                    TECHNICAL SUPPORT
-                </h3>
-                <flip-card class="flip-card" imageSrc="assets/img/technical-support.jpg" backgroundColor="blue">
-                    WDC provides cross-disciplinary technical assistance to communities and grassroot organisations on
-                    an
-                    on-going
-                    basis
-                </flip-card>
-            </div>
-        </div>
+  <div
+    fxFlex="none"
+    class="black-panel"
+    fxLayout="column"
+    fxLayoutAlign="space-evenly center"
+  >
+    <div
+      fxLayout="column"
+      fxLayoutAlign="space-evenly start"
+      fxLayoutGap="16px"
+    >
+      <div class="gold" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+        <img class="icon" src="assets/img/call.png" />
+        <a href="tel:00919902298154">+91-9902298154</a>
+      </div>
+
+      <div class="gold" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+        <img class="icon" src="assets/img/email.png" />
+        <a href="mailto:design.woven@gmail.com">design.woven@gmail.com</a>
+      </div>
+
+      <div class="gold" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+        <img fxFlex="none" class="icon" src="assets/img/location.png" />
+        <span>6th floor, Rich Homes Richmond Road, Bangalore</span>
+      </div>
     </div>
 
-    <div fxFlex="none" class="black-panel" fxLayout="column" fxLayoutAlign="space-evenly center">
-        <div fxLayout="column" fxLayoutAlign="space-evenly start" fxLayoutGap="16px">
-            <p class="gold">
-                <img class="icon" src="assets/img/call.png" />
-                <a href="tel:00919902298154">+91-9902298154</a>
-            </p>
-
-            <p class="gold">
-                <img class="icon" src="assets/img/email.png" />
-                <a href="mailto:design.woven@gmail.com">design.woven@gmail.com</a>
-            </p>
-
-            <p class="gold">
-                <img class="icon" src="assets/img/location.png" />6th floor, Rich Homes Richmond Road Bangalore
-            </p>
-        </div>
-
-        <img class="map" src="assets/img/map.png" />
-
-    </div>
-
+    <img class="map" src="assets/img/map.png" />
+  </div>
 </div>

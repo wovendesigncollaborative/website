@@ -9,10 +9,20 @@
   </div>
 </div> -->
 
-<div class="flip-card-inner circle" [ngStyle]="{'width': radius, 'height': radius}">
-  <div class="flip-card-front circle" [ngStyle]="{'background-image': 'url(' + imageSrc + ')'}">
-  </div>
-  <div fxLayout fxLayoutAlign="center center" class="flip-card-back circle" [ngClass]="backgroundColor">
+<div
+  class="flip-card-inner circle"
+  [ngStyle]="{ width: radius, height: radius }"
+>
+  <div
+    class="flip-card-front circle"
+    [ngStyle]="{ 'background-image': 'url(' + imageSrc + ')' }"
+  ></div>
+  <div
+    fxLayout
+    fxLayoutAlign="center center"
+    class="flip-card-back circle"
+    [ngClass]="backgroundColor"
+  >
     <p>
       <ng-content></ng-content>
     </p>
