@@ -7,13 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PhotoWithLegendComponent implements OnInit {
 
-  @Input() public width = '200px';
+  @Input() public width: string = "100%";
 
-  @Input() public legend = 'legend';
+  @Input() public legend : string;
 
   @Input() public src: string;
 
-  @Input() public height: string;
   constructor() { }
 
   public ngOnInit() { }
