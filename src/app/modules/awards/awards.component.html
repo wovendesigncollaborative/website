@@ -1,6 +1,7 @@
 <div fxLayout="row" fxFlexFill>
   <div
-    fxLayout="row"
+    fxLayout.gt-md="row"
+    fxLayout.lt-md="column"
     fxLayoutAlign="space-evenly"
     fxFlex="grow"
     fxLayoutGap="10px"
@@ -83,5 +84,5 @@
     </award-card>
   </div>
 
-  <div class="grey-strap" fxFlex="none"></div>
+  <div fxShow fxHide.lt-md class="grey-strap" fxFlex="none"></div>
 </div>
