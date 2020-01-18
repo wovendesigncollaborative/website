@@ -1,13 +1,19 @@
-<div class='footer' fxLayout="column">
+<div fxShow fxHide.lt-md class="footer" fxLayout="column">
   <div class="black-panel white-line"></div>
-  <div class='black-line'></div>
-  <div fxLayout="row" fxFlex fxLayoutAlign='space-between center'>
-    <p class='footer-text'>{{addressFirstPart}} <br>
-      {{addressSecondPart}}
+  <div class="black-line"></div>
+  <div fxLayout="row" fxFlex fxLayoutAlign="space-between center">
+    <p class="footer-text">
+      {{ addressFirstPart }} <br />
+      {{ addressSecondPart }}
     </p>
-    <div class='copyright' fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+    <div
+      class="copyright"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutGap="5px"
+    >
       <mat-icon>copyright</mat-icon>
-      <p class='footer-text'>wdc {{currentYear}}</p>
+      <p class="footer-text">wdc {{ currentYear }}</p>
     </div>
   </div>
 </div>

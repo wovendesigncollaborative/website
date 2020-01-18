@@ -2,27 +2,23 @@
   <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
     <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
   </a>
-
-  <mat-list-item [matMenuTriggerFor]="menu">
-    <mat-icon>unfold_more</mat-icon>
-    <a matline>About us</a>
-  </mat-list-item>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="onSidenavClose()" routerLink='/who-we-are'>Who we are</button>
-    <button mat-menu-item (click)="onSidenavClose()" routerLink='/what-we-do'>What we do</button>
-    <button mat-menu-item (click)="onSidenavClose()" routerLink='/how-we-work'>How we work</button>
-  </mat-menu>
-
-  <a mat-list-item routerLink="/projects" (click)="onSidenavClose()">
-    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Projects</span>
+  <a mat-list-item routerLink="/team" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon>
+    <span class="nav-caption">Team</span>
   </a>
-  <a mat-list-item routerLink="/research-and-publications" (click)="onSidenavClose()">
-    <mat-icon>account_balance</mat-icon><span class="nav-caption">Research and Publications</span>
+  <a mat-list-item routerLink="/competencies" (click)="onSidenavClose()">
+    <mat-icon>account_balance</mat-icon
+    ><span class="nav-caption">Competencies</span>
+  </a>
+  <a mat-list-item routerLink="/projects" (click)="onSidenavClose()">
+    <mat-icon>account_balance</mat-icon
+    ><span class="nav-caption">Projects</span>
   </a>
   <a mat-list-item routerLink="/awards" (click)="onSidenavClose()">
     <mat-icon>account_balance</mat-icon><span class="nav-caption">Awards</span>
   </a>
-  <a mat-list-item routerLink="/contact-us" (click)="onSidenavClose()">
-    <mat-icon>account_balance</mat-icon><span class="nav-caption">Contact us</span>
+  <a mat-list-item routerLink="/connect-with-us" (click)="onSidenavClose()">
+    <mat-icon>account_balance</mat-icon
+    ><span class="nav-caption">Connect with us</span>
   </a>
 </mat-nav-list>

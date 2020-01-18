@@ -1,23 +1,31 @@
 <mat-toolbar>
-
-  <div fxHide.gt-xs>
+  <div
+    class="full-width"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    fxHide
+    fxShow.lt-md
+  >
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
+    <img class="logo" src="assets/img/logo.png" routerLink="/home" />
   </div>
 
-  <div fxLayout fxHide.xs class="toolbar-item black-line" fxFlex="1 0 auto">
-    <img class='logo' src="assets/img/logo.png" routerLink="/home" />
-    <ul fxLayout fxLayoutAlign='space-evenly end' class="navigation-items" fxFlex="1 1 auto">
-
-
+  <div fxLayout fxHide.lt-md class="toolbar-item black-line" fxFlex="1 0 auto">
+    <img class="logo" src="assets/img/logo.png" routerLink="/home" />
+    <ul
+      fxLayout
+      fxLayoutAlign="space-evenly end"
+      class="navigation-items"
+      fxFlex="1 1 auto"
+    >
       <li>
         <a class="link" routerLink="/team">Team</a>
       </li>
       <li>
         <a class="link" routerLink="/competencies">Competencies</a>
       </li>
-
 
       <!-- <li [matMenuTriggerFor]="menu">
         <a class="link"> About Us</a>
@@ -35,9 +43,14 @@
         <a class="link" routerLink="/awards">Awards & Publications</a>
       </li>
     </ul>
-    <div class="black-panel white-line" fxLayout="column" fxLayoutAlign="end center">
-      <a class="link white-text" routerLink="/connect-with-us">Connect with Us</a>
+    <div
+      class="black-panel white-line"
+      fxLayout="column"
+      fxLayoutAlign="end center"
+    >
+      <a class="link white-text" routerLink="/connect-with-us"
+        >Connect with Us</a
+      >
     </div>
   </div>
-
 </mat-toolbar>

@@ -18,12 +18,15 @@ a:active {
   padding-bottom: 0px;
   margin: 0;
 }
+.full-width {
+  width: 100%;
+}
 
 .mat-toolbar {
   font-family: 'Josefin Sans';
 }
 .logo {
-  height: 100%;
+  height: 140px;
 }
 
 .toolbar-item {
