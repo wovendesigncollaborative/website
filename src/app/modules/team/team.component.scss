@@ -1,6 +1,6 @@
 .photo {
-  width: 30%;
-  align-self: flex-start;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .right {

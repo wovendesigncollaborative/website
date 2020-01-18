@@ -6,30 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.scss'],
 })
 export class TeamComponent implements OnInit {
-  public competencies = [
-    'Coffee',
-    'Cleaning',
-    'Humor',
-    'Eating',
-    'Shouting',
-    'Complaining',
-  ];
-  public members = [
-    {
-      name: 'Paul Dejean',
-      role: 'Developer',
-    },
-    {
-      name: 'Chitraa Raj',
-      role: 'Chai maker',
-    },
-  ];
 
-  public shehla = {
-    legend: '',
-  };
 
-  constructor() {}
 
-  public ngOnInit() {}
+
+  constructor() { }
+
+  public ngOnInit() { }
 }

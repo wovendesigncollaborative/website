@@ -15,13 +15,15 @@
   </p>
 
   <h4>Founder and technical director</h4>
-  <div fxLayout>
-    <img
-      class="photo"
-      src="assets/img/people/nisha-mary-poulose.jpg"
-      fxFlex="none"
-    />
-    <div class="description">
+  <div fxLayout="row" fxLayout.lt-md="column">
+    <div fxLayout="row" fxLayoutAlign="start start">
+      <img
+        class="photo"
+        src="assets/img/people/nisha-mary-poulose.jpg"
+        fxFlex="1 1 0"
+      />
+    </div>
+    <div class="description" fxFlex="1 0 60%">
       <span>
         Nisha Mary Poulose is an award-winning architect and regional planner
         whose career in the urban sector spans 9 years and 3 countries.
@@ -59,7 +61,8 @@
   <div>
     <h4>Our experts</h4>
     <div
-      fxLayout
+      fxLayout="row"
+      fxLayout.lt-md="column"
       fxLayoutAlign="space-between"
       fxLayoutGap="20px"
       class="experts"
