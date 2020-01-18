@@ -26,7 +26,8 @@ a:active {
   font-family: 'Josefin Sans';
 }
 .logo {
-  height: 140px;
+  height: 100%;
+  max-height: 140px;
 }
 
 .toolbar-item {
