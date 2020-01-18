@@ -1,29 +1,45 @@
-<div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+<div fxLayout fxFlexFill>
   <div
-    fxLayout
-    fxLayoutAlign="center center"
-    [@fall]="hasClickedOnce ? 'end' : 'start'"
+    fxFlex
+    fxLayout="column"
+    fxLayoutAlign="space-between center"
+    class="main-container"
   >
-    <img
-      [@fadingIn]="fadingIn ? 'end' : 'start'"
-      class="image"
-      [src]="imageSrc"
-    />
+    <div fxLayout="row" fxFlex>
+      <!-- Column 1 -->
+      <div fxFlex="grow">
+        <p class="text-container">
+          {{ displayedCompetency.name }}
+        </p>
+        <p class="text-container">
+          {{ displayedCompetency.title }}
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div fxFlex="grow" fxLayout="column" fxLayoutAlign="center">
+        <img class="main-image" [src]="displayedCompetency.src" />
+      </div>
+
+      <!-- Column 3 -->
+      <div fxFlex="grow">
+        <p class="text-container">
+          {{ displayedCompetency.description }}
+        </p>
+      </div>
+    </div>
+    <div fxLayout="row nowrap" fxLayoutAlign="center" class="button-container">
+      <ng-container *ngFor="let url of images; let i = index">
+        <img
+          class="circle"
+          src="{{ url }}"
+          (click)="onImageClick(i)"
+          [ngClass]="{ grey: fadingIn && indexSelected === i }"
+          fxFlex="1 1 auto"
+        />
+      </ng-container>
+    </div>
   </div>
-  <div
-    fxLayout="row nowrap"
-    fxLayoutAlign="center"
-    class="container"
-    [@shrink]="hasClickedOnce ? 'end' : 'start'"
-  >
-    <ng-container *ngFor="let url of images; let i = index">
-      <img
-        class="circle"
-        src="{{ url }}"
-        (click)="onImageClick(i)"
-        [ngClass]="{ grey: fadingIn && indexSelected === i }"
-        fxFlex="1 1 auto"
-      />
-    </ng-container>
-  </div>
+
+  <div class="grey-strap" fxFlex="none"></div>
 </div>

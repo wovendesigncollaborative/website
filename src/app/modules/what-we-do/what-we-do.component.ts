@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FADING_IN, FALL, SHRINK } from './animations/animation';
+import { competencies, Competency } from './competencies';
 
 @Component({
   selector: 'app-what-we-do',
@@ -8,31 +9,30 @@ import { FADING_IN, FALL, SHRINK } from './animations/animation';
   animations: [FALL, SHRINK, FADING_IN],
 })
 export class WhatWeDoComponent implements OnInit {
-  public imageSrc = 'assets/img/nisha.jpg';
 
-  public images = [
-    'assets/img/regional-planning.jpg',
-    'assets/img/urban-design.jpg',
-    'assets/img/rural-development.jpg',
-    'assets/img/environmental-planning.jpg',
-    'assets/img/social-development.jpg',
-  ];
+
+  get images() {
+    return competencies.map(competency => competency.src)
+  }
+
 
   public hasClickedOnce = false;
   public fadingIn = false;
   public indexSelected = null;
+
+  public displayedCompetency: Competency = competencies[0];
 
   constructor() { }
 
   public ngOnInit() { }
 
   public onImageClick(index) {
-    if (!this.hasClickedOnce) {
+    /* if (!this.hasClickedOnce) {
       this.hasClickedOnce = true;
       setTimeout(() => (this.fadingIn = true), 2000);
-    }
+    } */
 
+    this.displayedCompetency = competencies[index]
     this.indexSelected = index;
-    this.imageSrc = this.images[index];
   }
 }
