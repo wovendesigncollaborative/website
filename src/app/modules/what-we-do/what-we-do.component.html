@@ -1,16 +1,29 @@
 <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-  <div fxLayout fxLayoutAlign="center center" [@fall]="hasClickedOnce ? 'end' : 'start'">
-
-    <img [@fadingIn]="fadingIn ? 'end' : 'start'" class="image" [src]="imageSrc">
-
+  <div
+    fxLayout
+    fxLayoutAlign="center center"
+    [@fall]="hasClickedOnce ? 'end' : 'start'"
+  >
+    <img
+      [@fadingIn]="fadingIn ? 'end' : 'start'"
+      class="image"
+      [src]="imageSrc"
+    />
   </div>
-  <div fxLayout="row nowrap" fxLayoutAlign="center" class='container'>
-
+  <div
+    fxLayout="row nowrap"
+    fxLayoutAlign="center"
+    class="container"
+    [@shrink]="hasClickedOnce ? 'end' : 'start'"
+  >
     <ng-container *ngFor="let url of images; let i = index">
-      <img [@shrink]="hasClickedOnce ? 'end' : 'start'" [@spacing]="hasClickedOnce
-      ? 'end' : 'start'" class='circle' src="{{url}}" (click)="onImageClick(i)"
-        [ngClass]="{'grey': fadingIn &&  indexSelected === i }">
+      <img
+        class="circle"
+        src="{{ url }}"
+        (click)="onImageClick(i)"
+        [ngClass]="{ grey: fadingIn && indexSelected === i }"
+        fxFlex="1 1 auto"
+      />
     </ng-container>
-
   </div>
 </div>

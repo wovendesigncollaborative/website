@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FADING_IN, FALL, SHRINK, SPACING } from './animations/animation';
+import { FADING_IN, FALL, SHRINK } from './animations/animation';
 
 @Component({
   selector: 'app-what-we-do',
   templateUrl: './what-we-do.component.html',
   styleUrls: ['./what-we-do.component.scss'],
-  animations: [FALL, SHRINK, SPACING, FADING_IN],
+  animations: [FALL, SHRINK, FADING_IN],
 })
 export class WhatWeDoComponent implements OnInit {
   public imageSrc = 'assets/img/nisha.jpg';
@@ -22,9 +22,9 @@ export class WhatWeDoComponent implements OnInit {
   public fadingIn = false;
   public indexSelected = null;
 
-  constructor() {}
+  constructor() { }
 
-  public ngOnInit() {}
+  public ngOnInit() { }
 
   public onImageClick(index) {
     if (!this.hasClickedOnce) {

@@ -1,10 +1,4 @@
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export const FALL = trigger('fall', [
   state(
@@ -26,31 +20,13 @@ export const SHRINK = trigger('shrink', [
   state(
     'start',
     style({
-      width: '200px',
+      width: '100%',
     }),
   ),
   state(
     'end',
     style({
-      width: '100px',
-    }),
-  ),
-  transition('start => end', [animate('2s ease-in-out')]),
-]);
-
-export const SPACING = trigger('spacing', [
-  state(
-    'start',
-    style({
-      marginRight: '3vw',
-      marginLeft: '3vw',
-    }),
-  ),
-  state(
-    'end',
-    style({
-      marginRight: '2vw',
-      marginLeft: '2vw',
+      width: '50%',
     }),
   ),
   transition('start => end', [animate('2s ease-in-out')]),
