@@ -1,13 +1,66 @@
-<div class='slideshow-container'>
-
-  <slideshow autoPlay="true" [imageUrls]="slides" [lazyLoad]="slides?.length > 1" [autoPlayWaitForLazyLoad]="true"
-    (onIndexChanged)="swipeTextSlide($event)" [autoPlayInterval]="10000" showDots="true" minHeight="300px">
+<div fxHide.lt-md fxSHow class="slideshow-container">
+  <slideshow
+    autoPlay="true"
+    [imageUrls]="slides"
+    [lazyLoad]="slides?.length > 1"
+    [autoPlayWaitForLazyLoad]="true"
+    (onIndexChanged)="swipeTextSlide($event)"
+    [autoPlayInterval]="10000"
+    showDots="true"
+    minHeight="300px"
+  >
   </slideshow>
 
-  <div class='description-container'>
-    <p fxFlex="row wrap" fxLayoutAlign='center' class='description'>{{description}}</p>
+  <div class="vertical-black-panel">
+    <p fxFlex="row wrap" fxLayoutAlign="center" class="description">
+      {{ description }}
+    </p>
   </div>
-  <h2 class='title-container' [ngClass]="{'white-text': index===2}">
-    <div fittext="true" activateOnResize="true" [modelToWatch]="title" class='title'>{{title | uppercase}}</div>
+  <h2
+    class="vertical-title-container"
+    [ngClass]="{ 'white-text': index === 2 }"
+  >
+    <div
+      fittext="true"
+      activateOnResize="true"
+      [modelToWatch]="title"
+      class="title"
+    >
+      {{ title | uppercase }}
+    </div>
   </h2>
+</div>
+
+<div fxLayout="column" fxShow.lt-md fxHide class="slideshow-container">
+  <slideshow
+    autoPlay="true"
+    [imageUrls]="slides"
+    [lazyLoad]="slides?.length > 1"
+    [autoPlayWaitForLazyLoad]="true"
+    (onIndexChanged)="swipeTextSlide($event)"
+    [autoPlayInterval]="10000"
+    showDots="true"
+    minHeight="300px"
+  >
+  </slideshow>
+
+  <h2
+    class="horizontal-title-container"
+    [ngClass]="{ 'white-text': index === 2 }"
+  >
+    <div
+      fittext="true"
+      activateOnResize="true"
+      [modelToWatch]="title"
+      class="title"
+    >
+      {{ title | uppercase }}
+    </div>
+  </h2>
+
+  <div class="horizontal-black-panel">
+    <p fxFlex="row wrap" fxLayoutAlign="center" class="description">
+      {{ description }}
+    </p>
+  </div>
 </div>

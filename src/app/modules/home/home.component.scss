@@ -1,4 +1,4 @@
-@import "src/variables.scss";
+@import 'src/variables.scss';
 
 .text-container {
   padding: 16px;
@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.title-container {
+.vertical-title-container {
   position: absolute;
   left: 0;
   top: 70%;
@@ -19,12 +19,24 @@
   height: 80px;
 }
 
+.horizontal-title-container {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  right: 0;
+  height: 0;
+}
+
 .title {
   padding: 0 12px;
   text-align: center;
 }
 
-.description-container {
+.horizontal-black-panel {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.vertical-black-panel {
   position: absolute;
   width: $black-panel-width;
   top: 0;
