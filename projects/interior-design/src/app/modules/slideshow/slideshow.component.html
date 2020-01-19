@@ -1,12 +1,15 @@
 <!-- Slideshow container -->
-<div class="slideshow-container" [style.width]="width" [style.height]="height">
+<div
+  class="slideshow-container"
+  [style.width]="width"
+  [style.height]="height"
+  [@slideAnimation]="slideIndex"
+>
   <!-- Full-width images with number and caption text -->
   <ng-container *ngFor="let slide of slides; let i = index">
-    <div @fade *ngIf="slideIndex === i" class="full-space">
-      <!-- <div class="numbertext">1 / 3</div> -->
-      <img @fade class="image" [src]="slides[i]" />
-      <!-- <div class="text">Caption Text</div> -->
-    </div>
+    <!-- <div class="numbertext">1 / 3</div> -->
+    <img *ngIf="slideIndex === i" class="image" [src]="slides[i]" />
+    <!-- <div class="text">Caption Text</div> -->
   </ng-container>
 
   <div *ngIf="showArrows">
