@@ -19,9 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "src/assets"
-            ],
+            "assets": ["src/assets"],
             "styles": [
               "src/normalize.css",
               "src/styles.scss",
@@ -80,14 +78,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss",
-              "src/theme.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss", "src/theme.scss"],
             "scripts": []
           }
         },
@@ -99,9 +91,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -119,6 +109,242 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {}
+        }
+      }
+    },
+    "integrated-design": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/integrated-design",
+      "sourceRoot": "projects/integrated-design/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/integrated-design",
+            "index": "projects/integrated-design/src/index.html",
+            "main": "projects/integrated-design/src/main.ts",
+            "polyfills": "projects/integrated-design/src/polyfills.ts",
+            "tsConfig": "projects/integrated-design/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/integrated-design/src/favicon.ico",
+              "projects/integrated-design/src/assets"
+            ],
+            "styles": [
+              "projects/integrated-design/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/integrated-design/src/environments/environment.ts",
+                  "with": "projects/integrated-design/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "integrated-design:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "integrated-design:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "integrated-design:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/integrated-design/src/test.ts",
+            "polyfills": "projects/integrated-design/src/polyfills.ts",
+            "tsConfig": "projects/integrated-design/tsconfig.spec.json",
+            "karmaConfig": "projects/integrated-design/karma.conf.js",
+            "assets": [
+              "projects/integrated-design/src/favicon.ico",
+              "projects/integrated-design/src/assets"
+            ],
+            "styles": [
+              "projects/integrated-design/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/integrated-design/tsconfig.app.json",
+              "projects/integrated-design/tsconfig.spec.json",
+              "projects/integrated-design/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/integrated-design/e2e/protractor.conf.js",
+            "devServerTarget": "integrated-design:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "integrated-design:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "interior-design": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/interior-design",
+      "sourceRoot": "projects/interior-design/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/interior-design",
+            "index": "projects/interior-design/src/index.html",
+            "main": "projects/interior-design/src/main.ts",
+            "polyfills": "projects/interior-design/src/polyfills.ts",
+            "tsConfig": "projects/interior-design/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/interior-design/src/favicon.ico",
+              "projects/interior-design/src/assets"
+            ],
+            "styles": [
+              "projects/interior-design/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/interior-design/src/environments/environment.ts",
+                  "with": "projects/interior-design/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "interior-design:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "interior-design:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "interior-design:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/interior-design/src/test.ts",
+            "polyfills": "projects/interior-design/src/polyfills.ts",
+            "tsConfig": "projects/interior-design/tsconfig.spec.json",
+            "karmaConfig": "projects/interior-design/karma.conf.js",
+            "assets": [
+              "projects/interior-design/src/favicon.ico",
+              "projects/interior-design/src/assets"
+            ],
+            "styles": [
+              "projects/interior-design/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/interior-design/tsconfig.app.json",
+              "projects/interior-design/tsconfig.spec.json",
+              "projects/interior-design/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/interior-design/e2e/protractor.conf.js",
+            "devServerTarget": "interior-design:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "interior-design:serve:production"
+            }
+          }
         }
       }
     }
