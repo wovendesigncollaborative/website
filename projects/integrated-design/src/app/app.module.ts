@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -47,3 +48,14 @@ import { WhatWeDoModule } from './modules/what-we-do/what-we-do.module';
   bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+
+@NgModule({})
+export class IntegratedDesignAppModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: AppModule,
+      providers: []
+    }
+  }
+}
