@@ -1,9 +1,18 @@
-<mat-toolbar>
-  <img class="logo" src="assets/img/logo.png" />
-  <p>
-    Woven Interior
-  </p>
-  <div>
+<div fxLayout="row" fxLayoutAlign="space-between center" class="header">
+  <div
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    fxLayoutGap="12px"
+    class="logo"
+  >
+    <img class="logo" src="assets/img/logo.png" />
+    <p class="company-name">
+      Woven<br />
+      Interior
+    </p>
+  </div>
+
+  <div fxLayout="row" fxLayoutGap="20px" class="button-menu">
     <button>
       Projects
     </button>
@@ -14,4 +23,4 @@
       Contact
     </button>
   </div>
-</mat-toolbar>
+</div>
