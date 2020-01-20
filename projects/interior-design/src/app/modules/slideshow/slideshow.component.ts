@@ -11,10 +11,10 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
     trigger('carouselAnimation', [
       transition('void => *', [
         style({ opacity: 0 }),
-        animate('0.3s ease-in-out', style({ opacity: 1 }))
+        animate('1s', style({ opacity: 1 }))
       ]),
       transition('* => void', [
-        animate('0.3s ease-in-out', style({ opacity: 0 }))
+        animate('1s', style({ opacity: 0 }))
       ])
     ])
   ]
@@ -25,9 +25,9 @@ export class SlideshowComponent implements OnInit, OnDestroy {
 
   slideIndex = 0;
 
-  @Input() autoPlay = false;
-  @Input() autoPlayInterval = 2000;
-  @Input() showArrows: Boolean = true;
+  @Input() autoPlay = true;
+  @Input() autoPlayInterval = 5000;
+  @Input() showArrows: Boolean = false;
   @Input() showDots: Boolean = false;
   @Input() height = '400px';
   @Input() width = '100%';
