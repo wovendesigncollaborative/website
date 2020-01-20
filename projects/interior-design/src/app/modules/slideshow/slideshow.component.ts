@@ -1,24 +1,23 @@
-import { animate, group, query, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'slideshow',
   templateUrl: './slideshow.component.html',
   styleUrls: ['./slideshow.component.scss'],
   animations: [
-    trigger('slideAnimation', [
-      transition('* => *', group([
-        query(':enter', [
-          style({ opacity: 0, height: '100vh' }),
-          animate('1000ms', style({ opacity: 1 })),
-        ]),
-        query(':leave', [
-          animate('1000ms', style({ opacity: 0 }))
-        ], { optional: true })
-      ]))
+    trigger('carouselAnimation', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('0.3s ease-in-out', style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate('0.3s ease-in-out', style({ opacity: 0 }))
+      ])
     ])
   ]
-
 
 
 })
@@ -37,6 +36,10 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   slidePlayer
 
   constructor() { }
+
+  onAnimationEvent(event) {
+    console.log(event)
+  }
 
   ngOnInit() {
     if (this.autoPlay) {
