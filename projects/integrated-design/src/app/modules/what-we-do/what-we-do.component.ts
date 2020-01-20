@@ -12,7 +12,7 @@ export class WhatWeDoComponent implements OnInit {
 
 
   get images() {
-    return competencies.map(competency => competency.src)
+    return competencies.map(competency => competency.src);
   }
 
 
@@ -32,7 +32,7 @@ export class WhatWeDoComponent implements OnInit {
       setTimeout(() => (this.fadingIn = true), 2000);
     } */
 
-    this.displayedCompetency = competencies[index]
+    this.displayedCompetency = competencies[index];
     this.indexSelected = index;
   }
 }

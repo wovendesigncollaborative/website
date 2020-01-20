@@ -56,6 +56,6 @@ export class IntegratedDesignAppModule {
     return {
       ngModule: AppModule,
       providers: []
-    }
+    };
   }
 }

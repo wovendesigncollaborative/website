@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PhotoWithLegendComponent implements OnInit {
 
-  @Input() public width: string = "100%";
+  @Input() public width = '100%';
 
-  @Input() public legend : string;
+  @Input() public legend: string;
 
   @Input() public src: string;
 

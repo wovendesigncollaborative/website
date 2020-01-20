@@ -9,10 +9,10 @@ export class TeamMemberComponent implements OnInit {
 
   @Input() description: string;
 
-  @Input() direction: "column" | "column-reverse" = "column";
+  @Input() direction: 'column' | 'column-reverse' = 'column';
 
   get fxLayout() {
-    return `${this.direction} center`
+    return `${this.direction} center`;
   }
 
   constructor() { }

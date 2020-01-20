@@ -25,37 +25,33 @@ export class SlideshowComponent implements OnInit, OnDestroy {
 
   slideIndex = 0;
 
-  @Input() autoPlay: boolean = false;
-  @Input() autoPlayInterval: number = 2000;
+  @Input() autoPlay = false;
+  @Input() autoPlayInterval = 2000;
   @Input() showArrows: Boolean = true;
   @Input() showDots: Boolean = false;
   @Input() height = '400px';
   @Input() width = '100%';
   @Input() slides: string[] = [];
 
-  slidePlayer
+  slidePlayer;
 
   constructor() { }
 
-  onAnimationEvent(event) {
-    console.log(event)
-  }
-
   ngOnInit() {
     if (this.autoPlay) {
-      this.slidePlayer = this.launchAutoPlay()
+      this.slidePlayer = this.launchAutoPlay();
     }
-    this.preloadImages()
+    this.preloadImages();
   }
 
   ngOnDestroy() {
     if (this.slidePlayer) {
-      clearInterval(this.slidePlayer)
+      clearInterval(this.slidePlayer);
     }
   }
 
   launchAutoPlay() {
-    return setInterval(() => this.nextSlide(), this.autoPlayInterval)
+    return setInterval(() => this.nextSlide(), this.autoPlayInterval);
   }
 
 
@@ -65,7 +61,6 @@ export class SlideshowComponent implements OnInit, OnDestroy {
     } else {
       this.slideIndex = 0;
     }
-    console.log(this.slideIndex)
   }
 
   previousSlide() {
@@ -76,11 +71,11 @@ export class SlideshowComponent implements OnInit, OnDestroy {
     }
   }
   selectSlide(index: number) {
-    this.slideIndex = index
+    this.slideIndex = index;
   }
 
   isDisplayed(index) {
-    return index === this.slideIndex
+    return index === this.slideIndex;
   }
 
   preloadImages() {

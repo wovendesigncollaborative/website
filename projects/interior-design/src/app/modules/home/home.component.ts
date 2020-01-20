@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     'assets/img/slider-b.png',
     'assets/img/slider-c.png',
     'assets/img/slider-d.png'
-  ]
+  ];
 
   constructor() { }
 
