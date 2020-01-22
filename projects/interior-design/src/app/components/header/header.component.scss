@@ -1,5 +1,6 @@
 .logo {
   height: 100%;
+  outline: none;
 }
 
 .header {
@@ -38,8 +39,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 
 .circle:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.circle:active {
+  background-color: rgba(0, 0, 0, 1);
 }

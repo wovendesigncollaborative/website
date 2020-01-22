@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeModule } from './modules/home/home.module';
 import { MaterialModule } from './modules/material/material.module';
+import { ProjectsModule } from './modules/projects/projects.module';
 
 
 
@@ -28,6 +29,7 @@ import { MaterialModule } from './modules/material/material.module';
     MaterialModule,
     FlexLayoutModule,
     FontAwesomeModule,
+    ProjectsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

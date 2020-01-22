@@ -5,7 +5,7 @@
     fxLayoutGap="12px"
     class="logo"
   >
-    <img class="logo" src="assets/img/logo.jpg" />
+    <img class="logo" src="assets/img/logo.jpg" routerLink="/home" />
     <div fxLayout="column" fxLayoutAlign="end" style.height="100%" class="name">
       <p class="company-name">{{ 'Woven Designs' | uppercase }}</p>
       <p class="sub-company-name">
@@ -15,7 +15,7 @@
   </div>
 
   <div fxLayout="row" fxLayoutGap="20px" class="button-menu">
-    <div class="circle">
+    <div class="circle" routerLink="/projects">
       <fa-icon icon="book"></fa-icon>
     </div>
     <div class="circle">
