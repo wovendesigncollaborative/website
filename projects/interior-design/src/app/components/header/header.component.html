@@ -5,22 +5,24 @@
     fxLayoutGap="12px"
     class="logo"
   >
-    <img class="logo" src="assets/img/logo.png" />
-    <p class="company-name">
-      Woven<br />
-      Interior
-    </p>
+    <img class="logo" src="assets/img/logo.jpg" />
+    <div fxLayout="column" fxLayoutAlign="end" style.height="100%" class="name">
+      <p class="company-name">{{ 'Woven Designs' | uppercase }}</p>
+      <p class="sub-company-name">
+        {{ 'Architecture and Interiors' | uppercase }}
+      </p>
+    </div>
   </div>
 
   <div fxLayout="row" fxLayoutGap="20px" class="button-menu">
-    <button>
-      Projects
-    </button>
-    <button>
-      About
-    </button>
-    <button>
-      Contact
-    </button>
+    <div class="circle">
+      <fa-icon icon="book"></fa-icon>
+    </div>
+    <div class="circle">
+      <fa-icon icon="users"></fa-icon>
+    </div>
+    <div class="circle">
+      <fa-icon icon="eye"></fa-icon>
+    </div>
   </div>
 </div>
