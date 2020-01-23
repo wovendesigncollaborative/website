@@ -1,0 +1,11 @@
+@import 'src/variables.scss';
+
+.projects-container {
+  padding-top: calc(#{$headerHeight} + 10px);
+}
+
+project-card {
+  min-width: 300px;
+  height: 300px;
+  padding: 10px;
+}

@@ -1,16 +1,4 @@
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
-<p>projects works!</p>
+<div fxLayout="row wrap" class="projects-container">
+  <project-card fxFlex="1 1 0" *ngFor="let slide of slides" src="{{ slide }}">
+  </project-card>
+</div>

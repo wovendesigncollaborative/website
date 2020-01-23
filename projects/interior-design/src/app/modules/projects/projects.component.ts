@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  slides = [
+    'assets/img/slider-1.png',
+    'assets/img/slider-2.png',
+    'assets/img/slider-3.png',
+    'assets/img/slider-4.png',
+    'assets/img/slider-1.png',
+    'assets/img/slider-2.png',
+    'assets/img/slider-3.png',
+    'assets/img/slider-4.png',
+    'assets/img/slider-1.png',
+    'assets/img/slider-2.png',
+    'assets/img/slider-3.png',
+    'assets/img/slider-4.png',
+  ];
+
   constructor() { }
 
   ngOnInit() {

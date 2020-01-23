@@ -132,9 +132,7 @@
               "projects/integrated-design/src/favicon.ico",
               "projects/integrated-design/src/assets"
             ],
-            "styles": [
-              "projects/integrated-design/src/styles.css"
-            ],
+            "styles": ["projects/integrated-design/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -197,9 +195,7 @@
               "projects/integrated-design/src/favicon.ico",
               "projects/integrated-design/src/assets"
             ],
-            "styles": [
-              "projects/integrated-design/src/styles.css"
-            ],
+            "styles": ["projects/integrated-design/src/styles.scss"],
             "scripts": []
           }
         },
@@ -211,9 +207,7 @@
               "projects/integrated-design/tsconfig.spec.json",
               "projects/integrated-design/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -250,9 +244,7 @@
               "projects/interior-design/src/favicon.ico",
               "projects/interior-design/src/assets"
             ],
-            "styles": [
-              "projects/interior-design/src/styles.css"
-            ],
+            "styles": ["projects/interior-design/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -315,9 +307,7 @@
               "projects/interior-design/src/favicon.ico",
               "projects/interior-design/src/assets"
             ],
-            "styles": [
-              "projects/interior-design/src/styles.css"
-            ],
+            "styles": ["projects/interior-design/src/styles.scss"],
             "scripts": []
           }
         },
@@ -329,9 +319,7 @@
               "projects/interior-design/tsconfig.spec.json",
               "projects/interior-design/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
