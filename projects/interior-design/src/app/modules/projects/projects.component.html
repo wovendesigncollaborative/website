@@ -1,3 +1,8 @@
 <div class="projects-container">
-  <project-card *ngFor="let slide of slides" src="{{ slide }}"> </project-card>
+  <project-card
+    *ngFor="let project of projects"
+    [project]="project"
+    [routerLink]="['/projects', project.id]"
+  >
+  </project-card>
 </div>

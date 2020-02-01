@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SlideshowComponent } from './slideshow.component';
 
 
@@ -9,7 +8,6 @@ import { SlideshowComponent } from './slideshow.component';
   declarations: [SlideshowComponent],
   imports: [
     CommonModule,
-    BrowserAnimationsModule
   ],
   exports: [
     SlideshowComponent

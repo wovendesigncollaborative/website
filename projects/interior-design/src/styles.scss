@@ -9,4 +9,10 @@ p {
   margin: 0;
 }
 
-$headerHeight: 80px;
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgb(0, 0, 0, 0.85) !important;
+}

@@ -244,7 +244,10 @@
               "projects/interior-design/src/favicon.ico",
               "projects/interior-design/src/assets"
             ],
-            "styles": ["projects/interior-design/src/styles.scss"],
+            "styles": [
+              "projects/interior-design/src/styles.scss",
+              "projects/interior-design/src/theme.scss"
+            ],
             "scripts": []
           },
           "configurations": {

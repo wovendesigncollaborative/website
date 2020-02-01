@@ -10,8 +10,10 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
-    "**/*.code-search": true
+    "**/*.code-search": true,
+    "**/integrated-design": true
   },
+
   "prettier.packageManager": "yarn",
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "editor.wordWrap": "wordWrapColumn",

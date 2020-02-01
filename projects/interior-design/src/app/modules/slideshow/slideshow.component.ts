@@ -32,13 +32,17 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   @Input() height = '400px';
   @Input() width = '100%';
   @Input() slides: string[] = [];
+  @Input() objectFit: string = 'cover';
+  @Input() whiteBackground = false;
 
   slidePlayer;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.objectFit)
     if (this.autoPlay) {
+
       this.slidePlayer = this.launchAutoPlay();
     }
     this.preloadImages();

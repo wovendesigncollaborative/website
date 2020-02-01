@@ -7,6 +7,7 @@
       *ngIf="slideIndex === i"
       class="slide"
       [src]="slide"
+      [style.objectFit]="objectFit"
       @carouselAnimation
     />
     <!-- <div class="text">Caption Text</div> -->
@@ -22,9 +23,10 @@
   <!-- The dots/circles -->
   <div *ngIf="showDots" class="dot-container">
     <span
-      *ngFor="let slide of slides; let index = index"
+      *ngFor="let slide of slides; let i = index"
       class="dot"
-      (click)="selectSlide(index)"
+      [ngClass]="{ active: slideIndex === i }"
+      (click)="selectSlide(i)"
     ></span>
   </div>
 </div>

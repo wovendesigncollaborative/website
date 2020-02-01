@@ -1,0 +1,17 @@
+@import 'src/variables.scss';
+
+.project-detail-container {
+  display: grid;
+  padding-top: calc(#{$headerHeight} + 10px);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
