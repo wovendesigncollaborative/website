@@ -31,7 +31,17 @@ const SUVEER: Project = {
     id: '2',
     src: `${PROJECTS_PHOTO_FOLDER}/suveer/main.png`,
     name: 'Suveer',
-    slides: []
+    slides: [`${PROJECTS_PHOTO_FOLDER}/suveer/1.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/1.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/2.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/3.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/4.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/5.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/6.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/7.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/8.png`,
+    `${PROJECTS_PHOTO_FOLDER}/suveer/9.png`,
+    ]
 }
 
 export const PROJECTS: Project[] = [MADHUKAR, SUVEER]
