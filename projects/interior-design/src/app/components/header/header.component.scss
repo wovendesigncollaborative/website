@@ -15,8 +15,7 @@
 
 .name {
   height: 100%;
-  padding-bottom: 16px;
-  text-align: center;
+  margin-top: -8px;
 }
 
 .button-menu {
@@ -27,11 +26,15 @@
 
 .company-name {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: bold;
+ 
 }
 
 .sub-company-name {
-  font-size: 1em;
+  margin-top: -10px;
+  font-size: 15px;
+
 }
 
 .circle {
