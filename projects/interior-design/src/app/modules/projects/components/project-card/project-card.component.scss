@@ -37,7 +37,16 @@
   opacity: 0.2;
 }
 
-@keyframes fade {
+.white-line {
+  background: white;
+  width: 70%;
+  height: 3px;
+}
+
+.name {
+  font-size: 1.5em;
+}
+/* @keyframes fade {
   from {
     opacity: 1;
   }
@@ -45,3 +54,4 @@
     opacity: 0;
   }
 }
+ */
