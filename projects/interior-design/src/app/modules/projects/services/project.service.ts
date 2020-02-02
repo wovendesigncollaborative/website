@@ -11,8 +11,7 @@ export class ProjectService {
   constructor() { }
 
   getProjectById(id: string) {
-    const numId = parseInt(id, 10);
-    return PROJECTS[numId - 1];
+    return PROJECTS.find(project => project.id === id);
   }
 
   getProjects(): Project[] {
