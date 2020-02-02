@@ -22,7 +22,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 })
 export class SlideshowComponent implements OnInit, OnDestroy {
-
+  @Input()
   slideIndex = 0;
 
   @Input() autoPlay = true;
@@ -33,7 +33,6 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   @Input() width = '100%';
   @Input() slides: string[] = [];
   @Input() objectFit: string = 'cover';
-  @Input() whiteBackground = false;
 
   slidePlayer;
 

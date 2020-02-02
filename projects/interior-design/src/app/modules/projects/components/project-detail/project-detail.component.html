@@ -1,8 +1,8 @@
 <div class="project-detail-container">
   <img
-    *ngFor="let slide of slides"
+    *ngFor="let slide of slides; let i = index"
     class="image"
     [src]="slide"
-    (click)="launchSlideShow()"
+    (click)="launchSlideShow(i)"
   />
 </div>

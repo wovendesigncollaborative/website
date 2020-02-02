@@ -43,14 +43,18 @@ export class ProjectDetailComponent implements OnInit {
   }
 
 
-  launchSlideShow() {
+  launchSlideShow(index) {
     this.dialog.open(SlideshowDialogComponent, {
       width: '80vw',
       height: '80vh',
       maxWidth: '100vw',
       maxHeight: '100vh',
       hasBackdrop: true,
-      data: this.project
+      data: {
+        project: this.project,
+        slideIndex: index
+      }
+
     });
   }
 }
