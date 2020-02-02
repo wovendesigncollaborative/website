@@ -22,13 +22,11 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 })
 export class SlideshowComponent implements OnInit, OnDestroy {
-  @Input()
-  slideIndex = 0;
-
+  @Input() slideIndex: number = 0;
   @Input() autoPlay = true;
   @Input() autoPlayInterval = 5000;
-  @Input() showArrows: Boolean = false;
-  @Input() showDots: Boolean = false;
+  @Input() showArrows: boolean = false;
+  @Input() showDots: boolean = false;
   @Input() height = '400px';
   @Input() width = '100%';
   @Input() slides: string[] = [];
@@ -39,12 +37,10 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.objectFit)
+    this.preloadImages();
     if (this.autoPlay) {
-
       this.slidePlayer = this.launchAutoPlay();
     }
-    this.preloadImages();
   }
 
   ngOnDestroy() {

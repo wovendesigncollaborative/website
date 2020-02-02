@@ -44,4 +44,29 @@ const SUVEER: Project = {
     ]
 }
 
-export const PROJECTS: Project[] = [MADHUKAR, SUVEER]
+const KRISHNA: Project = {
+    id: '3',
+    src: `${PROJECTS_PHOTO_FOLDER}/krishna/cover.jpg`,
+    name: 'Krishna',
+    slides: [
+        `${PROJECTS_PHOTO_FOLDER}/krishna/1.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/2.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/3.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/T1a.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/4.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/5.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/6.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/T2a.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/7.jpg`,
+        // `${PROJECTS_PHOTO_FOLDER}/krishna/8.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/9.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/10.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/T3.jpg`,
+        `${PROJECTS_PHOTO_FOLDER}/krishna/11.jpg`,
+
+
+
+    ]
+}
+
+export const PROJECTS: Project[] = [MADHUKAR, SUVEER, KRISHNA]

@@ -2,16 +2,37 @@
 
 .contacts-container {
   padding-top: calc(#{$headerHeight} + 10px);
-  position: relative;
-  //transform-style: preserve-3d;
-  perspective: 400px;
 }
 
 .image {
   width: 300px;
+}
+
+.link {
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  padding-right: 20px;
+}
+
+.banner {
   height: 300px;
-  object-fit: cover;
-  transform: rotateY(70deg) translateZ(-100px) translateX(100px);
-  position: relative;
-  background: red;
+  background: rgba(0, 0, 0, 0.62);
+  margin-top: auto;
+  //background-image: url('assets/img/');
+}
+
+.banner-text {
+  font-size: 2em;
+  color: white;
+}
+
+.main-container {
+  padding: 0 100px;
 }

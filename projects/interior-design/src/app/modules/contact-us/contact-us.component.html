@@ -1,3 +1,46 @@
-<div class="contacts-container">
-  <img src="assets/img/slider-1.png" class="image" />
+<div class="contacts-container" fxLayout="column" fxFlexFill>
+  <div fxLayout="row" class="main-container">
+    <div fxFlex="0 0 50%">
+      <img src="assets/img/people/nisha-mary-poulose.jpg" class="image" />
+      <p [style.width]="'300px'">
+        BLA BLA BLA BLA BLA NISHA BLA BLA BLA BLA BLA BLA BLA BLA NISHA BLA BLA
+        BLA BLA BLA BLA BLA BLA NISHA BLA BLA BLA BLA BLA BLA BLA BLA NISHA BLA
+        BLA BLA BLA BLA BLA BLA BLA NISHA BLA BLA BLA BLA BLA BLA BLA BLA NISHA
+        BLA BLA BLA
+      </p>
+    </div>
+    <div
+      fxLayout="column"
+      fxLayoutAlign="space-evenly start"
+      fxLayoutGap="16px"
+    >
+      <div class="link" fxLayout="row" fxLayoutAlign="center center">
+        <fa-icon class="icon" icon="phone" src="assets/img/call.png"></fa-icon>
+        <a href="tel:00919902298154">+91-9902298154</a>
+      </div>
+
+      <div class="link" fxLayout="row" fxLayoutAlign="center center">
+        <fa-icon class="icon" icon="envelope"></fa-icon>
+        <a href="mailto:design.woven@gmail.com">design.woven@gmail.com</a>
+      </div>
+
+      <div class="link" fxLayout="row" fxLayoutAlign="center center">
+        <fa-icon class="icon" icon="map-marker-alt"></fa-icon>
+        <a href="">6th Floor, Rich Homes Apartment, Richmond Road, Bengaluru</a>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.095540997886!2d77.59784541535629!3d12.965737918513781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d1575610e1%3A0x623c9342a16779b0!2sJaaga!5e0!3m2!1sen!2sin!4v1580625395425!5m2!1sen!2sin"
+        width="300"
+        height="300"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+  </div>
+  <div class="banner" fxLayout fxLayoutAlign="center center">
+    <p class="banner-text">
+      Contact Us
+    </p>
+  </div>
 </div>

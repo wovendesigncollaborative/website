@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
@@ -6,14 +6,9 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   templateUrl: './slideshow-dialog.component.html',
   styleUrls: ['./slideshow-dialog.component.scss']
 })
-export class SlideshowDialogComponent implements OnInit, AfterViewInit {
-  ngAfterViewInit(): void {
-    console.log(this.slideshow)
-    this.slideshow.selectSlide(this.slideIndex)
-  }
+export class SlideshowDialogComponent implements OnInit {
 
   slides: string[];
-  @ViewChild('slideshow', { static: false }) slideshow;
   slideIndex: number;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data) {
