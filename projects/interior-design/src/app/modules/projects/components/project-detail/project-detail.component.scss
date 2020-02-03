@@ -11,6 +11,17 @@
 
 .image {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 1.5s;
+}
+
+.image-box {
   height: 300px;
   width: 100%;
+  overflow: hidden;
+}
+
+.image:hover {
+  transform: scale(1.4);
 }

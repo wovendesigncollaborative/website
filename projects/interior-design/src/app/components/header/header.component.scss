@@ -3,6 +3,16 @@
 .logo {
   height: 100%;
   outline: none;
+  transition: height 1s, width 1s, padding-bottom 1s;
+  margin-top: auto;
+}
+
+.top-left-corner {
+  height: 100%;
+}
+
+.logo:active {
+  height: 120%;
 }
 
 .header {
@@ -28,13 +38,11 @@
   color: rgba(0, 0, 0, 0.8);
   font-size: 3em;
   font-weight: bold;
- 
 }
 
 .sub-company-name {
   margin-top: -10px;
   font-size: 15px;
-
 }
 
 .circle {
@@ -49,6 +57,9 @@
   outline: none;
 }
 
+fa-icon {
+  outline: none;
+}
 .circle:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }

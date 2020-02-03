@@ -13,7 +13,7 @@ import { SlideshowDialogComponent } from '../slideshow-dialog/slideshow-dialog.c
 export class ProjectDetailComponent implements OnInit {
 
 
-  project: Project;
+  project: Project | undefined;
 
 
   get slides() {
