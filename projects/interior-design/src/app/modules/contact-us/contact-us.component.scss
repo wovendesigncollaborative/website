@@ -2,14 +2,20 @@
 
 .contacts-container {
   padding-top: calc(#{$headerHeight} + 10px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: 100%;
 }
 
 .image {
-  width: 300px;
+  margin-top: 26px;
+  height: 40vmin;
 }
 
 .link {
-  font-size: 2em;
+  font-size: 1.2em;
+  padding: 10px 0;
 }
 
 a {
@@ -22,10 +28,10 @@ a {
 }
 
 .banner {
-  height: 300px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.62);
   margin-top: auto;
-  //background-image: url('assets/img/');
+  grid-column: 1 / span 3;
 }
 
 .banner-text {
@@ -33,6 +39,24 @@ a {
   color: white;
 }
 
-.main-container {
-  padding: 0 100px;
+.intro-text {
+  grid-column: 1 / span 3;
+  padding: 12px 5vw;
+}
+
+.left-container {
+  padding-left: 5vw;
+  grid-column: 1 / span 2;
+}
+
+.right-container {
+  padding-right: 5vw;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.education {
+  margin-top: 20px;
 }
