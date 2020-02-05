@@ -11,6 +11,8 @@ import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HomeModule } from './modules/home/home.module';
 import { MaterialModule } from './modules/material/material.module';
 import { ProjectsModule } from './modules/projects/projects.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -32,6 +34,7 @@ import { ProjectsModule } from './modules/projects/projects.module';
     FlexLayoutModule,
     FontAwesomeModule,
     ProjectsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
   ],
   providers: [],
