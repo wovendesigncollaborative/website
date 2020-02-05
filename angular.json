@@ -175,8 +175,8 @@
                   "maximumError": "10kb"
                 }
               ],
-              "serviceWorker": true,
-              "ngswConfigPath": "projects/interior-design/ngsw-config.json"
+              "serviceWorker": true
+              //"ngswConfigPath": "projects/interior-design/ngsw-config.json"
             }
           }
         },
@@ -243,10 +243,5 @@
       }
     }
   },
-  "defaultProject": "woven-design-collective",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+  "defaultProject": "interior-design"
 }
