@@ -108,7 +108,7 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": { "cname": "wovendesigncollaborative.com" }
         }
       }
     },
@@ -221,6 +221,10 @@
               "devServerTarget": "integrated-design:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": { "cname": "wovendesigncollaborative.com" }
         }
       }
     },
@@ -336,6 +340,10 @@
               "devServerTarget": "interior-design:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": { "cname": "wovendesigncollaborative.com" }
         }
       }
     }

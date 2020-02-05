@@ -3,7 +3,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBook, faEnvelope, faEye, faMapMarkerAlt, faPhone, faTimesCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faEnvelope, faInfo, faMapMarkerAlt, faPhone, faTimesCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -40,6 +40,6 @@ import { ProjectsModule } from './modules/projects/projects.module';
 export class AppModule {
 
   constructor(library: FaIconLibrary) {
-    library.addIcons(faBook, faUsers, faEye, faTimesCircle, faEnvelope, faPhone, faMapMarkerAlt);
+    library.addIcons(faBook, faUsers, faInfo, faTimesCircle, faEnvelope, faPhone, faMapMarkerAlt);
   }
 }
