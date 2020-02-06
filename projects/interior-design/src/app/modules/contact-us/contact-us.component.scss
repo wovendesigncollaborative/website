@@ -64,3 +64,14 @@ strong {
 .description {
   padding-right: 5vw;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .left-container {
+    grid-column: 1 / span 3;
+  }
+  .right-container {
+    padding-right: 1 / span 3;
+  }
+}
