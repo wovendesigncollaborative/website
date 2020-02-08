@@ -9,10 +9,3 @@ imagemin(['./src/assets/img/**/*.jpg'], {
   console.log(data);
   console.log('Images optimized');
 });
-
-imagemin(['./src/assets/img/**/*.jpg'], {
-  use: [imageminWebp({ quality: 50 })],
-}).then(data => {
-  console.log(data);
-  console.log('Images optimized');
-});

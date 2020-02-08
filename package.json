@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "tslint --project tsconfig.json",
+    "run-server": "ng build --prod && http-server -p 8080 -c-1 dist/interior-design",
     "deploy": "ng deploy --cname=wovendesigncollaborative.com",
     "e2e": "ng e2e"
   },
@@ -58,6 +59,7 @@
     "@types/node": "~8.9.4",
     "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.0.0",
+    "http-server": "^0.12.1",
     "husky": "^4.0.9",
     "imagemin": "^7.0.1",
     "imagemin-keep-folder": "^5.3.2",
