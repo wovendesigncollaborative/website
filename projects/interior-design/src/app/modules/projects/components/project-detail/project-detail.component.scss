@@ -3,7 +3,7 @@
 .project-detail-container {
   display: grid;
   padding-top: calc(#{$headerHeight} + 10px);
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   grid-gap: 5px;
   justify-items: center;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .image-box {
-  height: 300px;
+  height: 30vh;
   width: 100%;
   overflow: hidden;
 }

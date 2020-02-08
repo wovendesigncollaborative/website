@@ -17,7 +17,13 @@
     </div>
   </div>
 
-  <div fxLayout="row" fxLayoutGap="20px" class="button-menu">
+  <div
+    fxLayout="row"
+    fxLayoutGap="20px"
+    fxShow
+    fxHide.lt-sm
+    class="button-menu"
+  >
     <div class="circle" routerLink="/projects">
       <fa-icon icon="book"></fa-icon>
     </div>
@@ -28,4 +34,8 @@
       <fa-icon icon="info"></fa-icon>
     </div>
   </div>
+
+  <button fxHide fxShow.lt-sm mat-icon-button (click)="onToggleSidenav()">
+    <fa-icon icon="bars"></fa-icon>
+  </button>
 </div>
