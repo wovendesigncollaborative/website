@@ -19,9 +19,6 @@ export class SlideshowDialogComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick() {
-    console.log('click')
-  }
 
 
 }

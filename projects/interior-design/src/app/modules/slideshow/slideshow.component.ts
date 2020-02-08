@@ -37,7 +37,6 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    this.preloadImages();
     if (this.autoPlay) {
       this.slidePlayer = this.launchAutoPlay();
     }
@@ -76,12 +75,5 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   isDisplayed(index) {
     return index === this.slideIndex;
   }
-
-  preloadImages() {
-    this.slides.forEach(slide => {
-      (new Image()).src = slide;
-    });
-  }
-
 
 }

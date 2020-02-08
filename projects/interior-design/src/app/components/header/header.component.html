@@ -5,7 +5,12 @@
     fxLayoutGap="12px"
     class="top-left-corner"
   >
-    <img class="logo" src="assets/img/logo.webp" routerLink="/home" />
+    <picture class="logo">
+      <source class="logo" srcset="assets/img/logo.webp" type="image/wep" />
+      <source class="logo" srcset="assets/img/logo.jpg" type="image/jpeg" />
+      <img class="logo" src="assets/img/logo.jpg" routerLink="/home" />
+    </picture>
+
     <div fxLayout="column" fxLayoutAlign="center center" class="name">
       <p class="company-name">W D C</p>
       <p class="sub-company-name">ARCHITECTURE<br />and INTERIORS</p>

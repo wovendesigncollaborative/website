@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Project } from '../../data/projects';
 
 
@@ -8,12 +8,14 @@ import { Project } from '../../data/projects';
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.scss']
 })
-export class ProjectCardComponent implements OnInit, OnChanges {
+export class ProjectCardComponent implements OnInit {
   @Input() project: Project;
 
   get src() {
-    return this.project.src;
+    return this.project.src
   }
+
+
 
   get name() {
     return this.project.name;
@@ -26,8 +28,5 @@ export class ProjectCardComponent implements OnInit, OnChanges {
   ngOnInit() {
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(changes.project.currentValue)
-  }
 
 }

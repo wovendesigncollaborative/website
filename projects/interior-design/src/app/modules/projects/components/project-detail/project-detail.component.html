@@ -1,5 +1,9 @@
 <div class="project-detail-container">
   <div *ngFor="let slide of slides; let i = index" class="image-box">
-    <img class="image" [src]="slide" (click)="launchSlideShow(i)" />
+    <picture class="image" (click)="launchSlideShow(i)">
+      <source class="image" [srcset]="slide + '.webp'" />
+      <source class="image" [srcset]="slide + '.jpg'" type="image/jpeg" />
+      <img class="image" [src]="slide + '.jpg'" type="image/jpeg" />
+    </picture>
   </div>
 </div>

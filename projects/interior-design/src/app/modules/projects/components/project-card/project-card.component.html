@@ -1,6 +1,10 @@
 <div class="card">
   <div class="front">
-    <img class="image" [src]="src" />
+    <picture>
+      <source class="image" [srcset]="src + '.webp'" type="image/wep" />
+      <source class="image" [srcset]="src + '.jpg'" type="image/jpeg" />
+      <img class="image" [src]="src + '.jpg'" type="image/jpeg" />
+    </picture>
   </div>
   <div class="behind" fxLayout="column" fxLayoutAlign="center center">
     <h3 class="name">{{ name }}</h3>

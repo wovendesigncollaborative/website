@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   slides = [
-    'assets/img/home/slider-1.webp',
-    'assets/img/home/slider-2.webp',
-    'assets/img/home/slider-3.webp',
-    'assets/img/home/slider-4.webp'
+    'assets/img/home/slider-1',
+    'assets/img/home/slider-2',
+    'assets/img/home/slider-3',
+    'assets/img/home/slider-4'
   ];
 
   constructor() { }

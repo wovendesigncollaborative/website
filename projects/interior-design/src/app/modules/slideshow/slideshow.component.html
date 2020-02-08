@@ -3,13 +3,32 @@
   <!-- Full-width images with number and caption text -->
   <ng-container *ngFor="let slide of slides; let i = index">
     <!-- <div class="numbertext">1 / 3</div> -->
-    <img
-      *ngIf="slideIndex === i"
-      class="slide"
-      [src]="slide"
-      [style.objectFit]="objectFit"
-      @carouselAnimation
-    />
+    <picture>
+      <source
+        *ngIf="slideIndex === i"
+        class="slide"
+        [srcset]="slide + '.webp'"
+        [style.objectFit]="objectFit"
+        @carouselAnimation
+        type="image/webp"
+      />
+      <source
+        *ngIf="slideIndex === i"
+        class="slide"
+        [srcset]="slide + '.jpg'"
+        [style.objectFit]="objectFit"
+        @carouselAnimation
+        type="image/jpeg"
+      />
+      <img
+        *ngIf="slideIndex === i"
+        class="slide"
+        [src]="slide + '.jpg'"
+        [style.objectFit]="objectFit"
+        @carouselAnimation
+        type="image/jpeg"
+      />
+    </picture>
     <!-- <div class="text">Caption Text</div> -->
   </ng-container>
 
