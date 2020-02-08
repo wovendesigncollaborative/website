@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve --project=interior-design -o",
     "build": "ng build",
+    "prebuild": "node compressImages.js",
     "test": "ng test",
     "lint": "tslint --project tsconfig.json",
-    "run-server": "ng build --prod && http-server -p 8080 -c-1 dist/interior-design",
+    "run-server": "ng build --prod &&  &&  http-server -p 8080 -c-1 dist/interior-design",
     "deploy": "ng deploy --cname=wovendesigncollaborative.com",
     "e2e": "ng e2e"
   },
