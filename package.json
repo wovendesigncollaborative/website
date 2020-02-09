@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --project=interior-design -o",
-    "build": "ng build",
+    "build": "ng build --prod --output-path docs",
     "prebuild": "node compressImages.js",
+    "postbuild": "echo wovendesigncollaborative.com > docs/CNAME && cp docs/index.html docs/404.html",
     "test": "ng test",
     "lint": "tslint --project tsconfig.json",
     "run-server": "ng build --prod &&  &&  http-server -p 8080 -c-1 dist/interior-design",

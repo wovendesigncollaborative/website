@@ -3,7 +3,7 @@ const imageminWebp = require('imagemin-webp');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 
 imagemin(['./projects/interior-design/src/raw-assets/img/**/*'], {
-  use: [imageminWebp({ quality: 50 })],
+  use: [imageminWebp({ quality: 30 })],
   replaceOutputDir: output => {
     return output.replace('raw-assets', 'assets');
   },
@@ -13,7 +13,7 @@ imagemin(['./projects/interior-design/src/raw-assets/img/**/*'], {
 });
 
 imagemin(['./projects/interior-design/src/raw-assets/img/**/*'], {
-  plugins: [imageminMozjpeg({ quality: 40 })],
+  plugins: [imageminMozjpeg({ quality: 30 })],
   replaceOutputDir: output => {
     return output.replace('raw-assets', 'assets');
   },
