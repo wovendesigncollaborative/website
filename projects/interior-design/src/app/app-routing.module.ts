@@ -4,8 +4,8 @@ import { ContactUsComponent } from './modules/contact-us/contact-us.component';
 import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
+    //{ path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', component: HomeComponent },
     { path: 'projects', loadChildren: () => import('./modules/projects/projects.module').then(m => m.ProjectsModule) },
     { path: 'contacts', component: ContactUsComponent }
 ];
