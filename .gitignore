@@ -46,5 +46,5 @@ testem.log
 Thumbs.db
 
 # Assets
-**/assets
+**/src/assets
 **/raw-assets
