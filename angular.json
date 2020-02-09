@@ -112,13 +112,13 @@
               "devServerTarget": "integrated-design:serve:production"
             }
           }
-        },
-        "deploy": {
+        }
+        /* "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "cname": "wovendesigncollaborative.com"
           }
-        }
+        } */
       }
     },
     "interior-design": {
@@ -237,11 +237,11 @@
               "devServerTarget": "interior-design:serve:production"
             }
           }
-        },
+        } /* ,
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": { "cname": "wovendesigncollaborative.com" }
-        }
+        } */
       }
     }
   },

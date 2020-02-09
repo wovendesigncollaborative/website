@@ -9,8 +9,7 @@
     "postbuild": "echo wovendesigncollaborative.com > docs/CNAME && cp docs/index.html docs/404.html",
     "test": "ng test",
     "lint": "tslint --project tsconfig.json",
-    "run-server": "ng build --prod &&  &&  http-server -p 8080 -c-1 dist/interior-design",
-    "deploy": "ng deploy --cname=wovendesigncollaborative.com",
+    "run-server": "http-server -p 8080 -c-1 docs/",
     "e2e": "ng e2e"
   },
   "hooks": {
