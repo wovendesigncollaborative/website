@@ -14,7 +14,6 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HomeModule } from './modules/home/home.module';
 import { MaterialModule } from './modules/material/material.module';
-import { ProjectsModule } from './modules/projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { ProjectsModule } from './modules/projects/projects.module';
     MaterialModule,
     FlexLayoutModule,
     FontAwesomeModule,
-    ProjectsModule,
     MatSidenavModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
