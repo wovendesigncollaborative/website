@@ -1,4 +1,4 @@
-<mat-sidenav-container class="full-space">
+<mat-sidenav-container [@.disabled]="isApplicationLoaded" class="full-space">
   <mat-sidenav #sidenav role="navigation" position="end">
     <!--this is a place for us to add side-nav code-->
     <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
