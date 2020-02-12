@@ -14,14 +14,8 @@ export class ProjectDetailComponent implements OnInit {
 
 
   project: Project | undefined;
+  slides: string[]
 
-
-  get slides() {
-    if (this.project) {
-      return this.project.slides;
-    }
-    return []
-  }
   constructor(
     private activatedRoute: ActivatedRoute,
     projectService: ProjectService,
@@ -32,6 +26,8 @@ export class ProjectDetailComponent implements OnInit {
       if (projectId) {
         this.project = projectService.getProjectById(projectId);
       }
+
+      this.slides = this.project ? this.project.slides : []
 
 
     });
