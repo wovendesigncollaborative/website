@@ -16,7 +16,13 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
       transition('* => void', [
         animate('1s', style({ opacity: 0 }))
       ])
-    ])
+    ]),
+    trigger(
+      "blockInitialRenderAnimation",
+      [
+        transition(":enter", [])
+      ]
+    )
   ]
 
 
