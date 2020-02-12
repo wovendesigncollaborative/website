@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,11 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-  isApplicationLoaded = false;
+  @HostBinding('@.disabled')
+  public animationsDisabled = true;
+
   ngAfterViewInit(): void {
-    this.isApplicationLoaded = true;
+    this.animationsDisabled = false;
   }
 
 }
