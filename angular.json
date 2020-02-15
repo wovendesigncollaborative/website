@@ -21,7 +21,7 @@
             "aot": true,
             "assets": [
               "projects/integrated-design/src/favicon.ico",
-              "projects/integrated-design/src/build/assets"
+              "projects/integrated-design/src/assets"
             ],
             "styles": ["projects/integrated-design/src/styles.scss"],
             "scripts": []
@@ -112,12 +112,6 @@
             }
           }
         }
-        /* "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "cname": "wovendesigncollaborative.com"
-          }
-        } */
       }
     },
     "interior-design": {
@@ -235,11 +229,7 @@
               "devServerTarget": "interior-design:serve:production"
             }
           }
-        } /* ,
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": { "cname": "wovendesigncollaborative.com" }
-        } */
+        }
       }
     }
   },
