@@ -5,10 +5,10 @@
     fxLayoutGap="12px"
     class="top-left-corner"
   >
-    <picture class="logo">
-      <source class="logo" srcset="assets/img/logo.webp" type="image/wep" />
-      <source class="logo" srcset="assets/img/logo.jpg" type="image/jpeg" />
-      <img class="logo" src="assets/img/logo.jpg" routerLink="/home" />
+    <picture [style]="{ height: '100%' }">
+      <source srcset="assets/img/logo-small.webp" type="image/wep" />
+      <source srcset="assets/img/logo-small.jpg" type="image/jpeg" />
+      <img class="logo" src="assets/img/logo-small.jpg" routerLink="/" />
     </picture>
 
     <div fxLayout="column" fxLayoutAlign="center center" class="name">

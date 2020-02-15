@@ -17,7 +17,7 @@ export class HomeComponent {
 
   constructor(public cdr: ChangeDetectorRef) {}
 
-  @ViewChild('textContainer', { static: false }) public textContainer;
+  @ViewChild('textContainer') public textContainer;
 
   public swipeTextSlide(index) {
     this.index = index;

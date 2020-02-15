@@ -18,7 +18,7 @@
             "main": "projects/integrated-design/src/main.ts",
             "polyfills": "projects/integrated-design/src/polyfills.ts",
             "tsConfig": "projects/integrated-design/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "projects/integrated-design/src/favicon.ico",
               "projects/integrated-design/src/build/assets"
@@ -39,7 +39,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -136,7 +135,7 @@
             "main": "projects/interior-design/src/main.ts",
             "polyfills": "projects/interior-design/src/polyfills.ts",
             "tsConfig": "projects/interior-design/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "projects/interior-design/src/favicon.ico",
               "projects/interior-design/src/assets",
@@ -161,7 +160,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,

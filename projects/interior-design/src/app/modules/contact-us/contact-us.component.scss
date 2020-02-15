@@ -70,8 +70,16 @@ strong {
 
   .left-container {
     grid-column: 1 / span 3;
+    padding-right: 5vw;
+
+    .image {
+      align-self: center;
+      width: 50vmin;
+      height: auto;
+    }
   }
   .right-container {
-    padding-right: 1 / span 3;
+    grid-column: 1 / span 3;
+    padding-left: 5vw;
   }
 }
