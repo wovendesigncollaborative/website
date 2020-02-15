@@ -1,8 +1,8 @@
 <div class="card">
   <div class="front">
     <picture>
-      <source class="image" [srcset]="src + '.webp'" type="image/wep" />
-      <source class="image" [srcset]="src + '.jpg'" type="image/jpeg" />
+      <source [srcset]="src + '.webp'" type="image/wep" />
+      <source [srcset]="src + '.jpg'" type="image/jpeg" />
       <img class="image" [src]="src + '.jpg'" type="image/jpeg" />
     </picture>
   </div>

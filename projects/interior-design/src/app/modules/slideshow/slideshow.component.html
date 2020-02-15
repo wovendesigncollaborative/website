@@ -5,22 +5,10 @@
   [style.width]="width"
   [style.height]="height"
 >
-  <!-- Full-width images with number and caption text -->
   <ng-container *ngFor="let slide of slides; let i = index">
-    <!-- <div class="numbertext">1 / 3</div> -->
-    <picture *ngIf="slideIndex === i" @carouselAnimation>
-      <source
-        class="slide"
-        [srcset]="slide + '.webp'"
-        [style.objectFit]="objectFit"
-        type="image/webp"
-      />
-      <source
-        class="slide"
-        [srcset]="slide + '.jpg'"
-        [style.objectFit]="objectFit"
-        type="image/jpeg"
-      />
+    <picture class="slide" @carouselAnimation *ngIf="slideIndex === i">
+      <source [srcset]="slide + '.webp'" type="image/webp" />
+      <source [srcset]="slide + '.jpg'" type="image/jpeg" />
       <img
         class="slide"
         [src]="slide + '.jpg'"
@@ -28,7 +16,6 @@
         type="image/jpeg"
       />
     </picture>
-    <!-- <div class="text">Caption Text</div> -->
   </ng-container>
 
   <div *ngIf="showArrows">
