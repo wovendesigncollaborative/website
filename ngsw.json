@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1581232652640,
+  "timestamp": 1581844295929,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -8,8 +8,26 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/5-es2015.e853b59bb4c1a709cec0.js",
-        "/5-es5.e853b59bb4c1a709cec0.js",
+        "/5-es2015.5eaf076ee2c18ea1cde6.js",
+        "/5-es5.5eaf076ee2c18ea1cde6.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.c2511a7bde625f25c6e9.js",
+        "/main-es5.c2511a7bde625f25c6e9.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.835b17dc0bc3be23781c.js",
+        "/polyfills-es5.e0b8275475158bbbb7a6.js",
+        "/runtime-es2015.7f3f4ac5e8bae7fa543d.js",
+        "/runtime-es5.7f3f4ac5e8bae7fa543d.js",
+        "/styles.56ba9b4f49df68250508.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
         "/assets/icons/icon-152x152.png",
@@ -26,6 +44,8 @@
         "/assets/img/home/slider-3.webp",
         "/assets/img/home/slider-4.jpg",
         "/assets/img/home/slider-4.webp",
+        "/assets/img/logo-small.jpg",
+        "/assets/img/logo-small.webp",
         "/assets/img/logo.jpg",
         "/assets/img/logo.webp",
         "/assets/img/people/nisha-mary-poulose.jpg",
@@ -173,32 +193,15 @@
         "/assets/img/projects/tropical/T2.jpg",
         "/assets/img/projects/tropical/T2.webp",
         "/assets/img/projects/tropical/cover.jpg",
-        "/assets/img/projects/tropical/cover.webp",
-        "/favicon.ico",
-        "/index.html",
-        "/main-es2015.6745f99c49a43863125d.js",
-        "/main-es5.6745f99c49a43863125d.js",
-        "/manifest.webmanifest",
-        "/polyfills-es2015.b88100e957654acdec8c.js",
-        "/polyfills-es5.343eae7dd166f9b72ffb.js",
-        "/runtime-es2015.09fb6d343da86d79dd47.js",
-        "/runtime-es5.09fb6d343da86d79dd47.js",
-        "/styles.c7f8d8b4381c0d737ec9.css"
+        "/assets/img/projects/tropical/cover.webp"
       ],
-      "patterns": []
-    },
-    {
-      "name": "assets",
-      "installMode": "lazy",
-      "updateMode": "prefetch",
-      "urls": [],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/5-es2015.e853b59bb4c1a709cec0.js": "bcb1a2343a17469f932c02073529079b6dda5ead",
-    "/5-es5.e853b59bb4c1a709cec0.js": "bcb1a2343a17469f932c02073529079b6dda5ead",
+    "/5-es2015.5eaf076ee2c18ea1cde6.js": "bc31b61f4f1b93d29af69a8b1a9830083d5ffc8e",
+    "/5-es5.5eaf076ee2c18ea1cde6.js": "d9d4e5950d8d53a465aa3b5ecf710616ce118dff",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -215,6 +218,8 @@
     "/assets/img/home/slider-3.webp": "8b50c527ae504e867fdf92577c7f19d8ecc7f851",
     "/assets/img/home/slider-4.jpg": "b69e4a1de251c975cc0195bbfbf45cca5d040943",
     "/assets/img/home/slider-4.webp": "ad99d9b42b16031a59cba052be7138d1dffc8e7f",
+    "/assets/img/logo-small.jpg": "5fcd98e6f7c9d61aa14b3fe18c7cdb975d85474c",
+    "/assets/img/logo-small.webp": "8164a5caaedbda5d591f48bee4af5e0212bae095",
     "/assets/img/logo.jpg": "1b804edeed77510cdf7b09530e27c790dd876eb2",
     "/assets/img/logo.webp": "2751c2a8e9b709084c5ff602c8212e4548a221af",
     "/assets/img/people/nisha-mary-poulose.jpg": "3c3a01983364220b20bbda304b7f9c935c85645c",
@@ -364,15 +369,15 @@
     "/assets/img/projects/tropical/cover.jpg": "274e3bff48fcdbf089d8bd097aa9c85fbef80690",
     "/assets/img/projects/tropical/cover.webp": "be5f17587e3db9f3f5bdb89fbb94595ad360c328",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "826490598baedc4b6f57b9c9d2bae5107993346f",
-    "/main-es2015.6745f99c49a43863125d.js": "b5175b5a0c3ce33c5035985cfc98279fdcaaa21d",
-    "/main-es5.6745f99c49a43863125d.js": "8d26edc1b384bca5c9d5d217960aded51759d30f",
+    "/index.html": "47db21ebcfc1d85b082aa3746f86b28dd1bef44e",
+    "/main-es2015.c2511a7bde625f25c6e9.js": "0fcff57f1f0af1e5cbef680a4c3e8040086f80b2",
+    "/main-es5.c2511a7bde625f25c6e9.js": "2da0d86a568d3d2250090e864fbc7344a0fd4232",
     "/manifest.webmanifest": "1cfb25c764138e7494b6ed012c9c11638a512299",
-    "/polyfills-es2015.b88100e957654acdec8c.js": "7a44b7af58cabd2190ff869d59372f93a44f38a0",
-    "/polyfills-es5.343eae7dd166f9b72ffb.js": "41d7d646f0ecf4bc07f9acd1ccb93baa88bc8738",
-    "/runtime-es2015.09fb6d343da86d79dd47.js": "87a73edbe4aae59718f2b6cf8410b21b58977f3b",
-    "/runtime-es5.09fb6d343da86d79dd47.js": "833d2b88a6709c48d06fef92b2dbe6454bafaa5f",
-    "/styles.c7f8d8b4381c0d737ec9.css": "333c4f9960c937c1b82ecf759b1bb462a3e93679"
+    "/polyfills-es2015.835b17dc0bc3be23781c.js": "ba68f4f816ecf7320005a50ff38165d480561428",
+    "/polyfills-es5.e0b8275475158bbbb7a6.js": "712e73367d524d03846df16d6f26730fb12da7bb",
+    "/runtime-es2015.7f3f4ac5e8bae7fa543d.js": "c82dfc05df5d86bca44b03b59766f0cb25323742",
+    "/runtime-es5.7f3f4ac5e8bae7fa543d.js": "864853a68dff03d066d9127f76c96a61b3afaa43",
+    "/styles.56ba9b4f49df68250508.css": "ad1c2e85bd4ff34f7bc1670c431189670be53bdf"
   },
   "navigationUrls": [
     {
