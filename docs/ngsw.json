@@ -1,25 +1,28 @@
 {
   "configVersion": 1,
-  "timestamp": 1581767551764,
+  "timestamp": 1616143235823,
   "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
-        "/5-es2015.5eaf076ee2c18ea1cde6.js",
-        "/5-es5.5eaf076ee2c18ea1cde6.js",
+        "/5-es2015.0ffae9b9d7cd10b8eaf8.js",
+        "/5-es5.0ffae9b9d7cd10b8eaf8.js",
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.9579869b8e77944e68e3.js",
-        "/main-es5.9579869b8e77944e68e3.js",
+        "/main-es2015.aab44ff79da2b04f72ea.js",
+        "/main-es5.aab44ff79da2b04f72ea.js",
         "/manifest.webmanifest",
-        "/polyfills-es2015.835b17dc0bc3be23781c.js",
-        "/polyfills-es5.e0b8275475158bbbb7a6.js",
-        "/runtime-es2015.7f3f4ac5e8bae7fa543d.js",
-        "/runtime-es5.7f3f4ac5e8bae7fa543d.js",
-        "/styles.56ba9b4f49df68250508.css"
+        "/polyfills-es2015.7f7af8a4fb004deeab42.js",
+        "/polyfills-es5.5b4234070e4934499842.js",
+        "/runtime-es2015.7269ada450f475a1c993.js",
+        "/runtime-es5.7269ada450f475a1c993.js",
+        "/styles.5dc5051fa40b16bbd6e0.css"
       ],
       "patterns": []
     },
@@ -27,6 +30,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
@@ -200,8 +206,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/5-es2015.5eaf076ee2c18ea1cde6.js": "bc31b61f4f1b93d29af69a8b1a9830083d5ffc8e",
-    "/5-es5.5eaf076ee2c18ea1cde6.js": "d9d4e5950d8d53a465aa3b5ecf710616ce118dff",
+    "/5-es2015.0ffae9b9d7cd10b8eaf8.js": "4c7f775f3f9252cbd0949d48dcddd24a887826aa",
+    "/5-es5.0ffae9b9d7cd10b8eaf8.js": "b74f41f3c355434c3304d8e0e7842971146b72ad",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -369,15 +375,15 @@
     "/assets/img/projects/tropical/cover.jpg": "274e3bff48fcdbf089d8bd097aa9c85fbef80690",
     "/assets/img/projects/tropical/cover.webp": "be5f17587e3db9f3f5bdb89fbb94595ad360c328",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "1363b29f0fa5fee02e4cb3dfa0088777de5a4515",
-    "/main-es2015.9579869b8e77944e68e3.js": "0fcff57f1f0af1e5cbef680a4c3e8040086f80b2",
-    "/main-es5.9579869b8e77944e68e3.js": "2da0d86a568d3d2250090e864fbc7344a0fd4232",
-    "/manifest.webmanifest": "1cfb25c764138e7494b6ed012c9c11638a512299",
-    "/polyfills-es2015.835b17dc0bc3be23781c.js": "ba68f4f816ecf7320005a50ff38165d480561428",
-    "/polyfills-es5.e0b8275475158bbbb7a6.js": "712e73367d524d03846df16d6f26730fb12da7bb",
-    "/runtime-es2015.7f3f4ac5e8bae7fa543d.js": "c82dfc05df5d86bca44b03b59766f0cb25323742",
-    "/runtime-es5.7f3f4ac5e8bae7fa543d.js": "864853a68dff03d066d9127f76c96a61b3afaa43",
-    "/styles.56ba9b4f49df68250508.css": "ad1c2e85bd4ff34f7bc1670c431189670be53bdf"
+    "/index.html": "34232d2770d3358f65b392e1bba768d6d6c7b95d",
+    "/main-es2015.aab44ff79da2b04f72ea.js": "f09c6ab5cde013274bdf3e6ac4d453218198c02a",
+    "/main-es5.aab44ff79da2b04f72ea.js": "3916ac90a50563d5b9788cc5ae24c08f2c92c862",
+    "/manifest.webmanifest": "275e59884e4af90cc816ee0ed0c880ffffd035d7",
+    "/polyfills-es2015.7f7af8a4fb004deeab42.js": "dbf812a98905edbeaad3f69efd2fb94919d6c20d",
+    "/polyfills-es5.5b4234070e4934499842.js": "27a5af1bfac0dd05e15bdcd4ea919b6d9ac68e07",
+    "/runtime-es2015.7269ada450f475a1c993.js": "9e3a1bd677cbf9f744d45b3cbf8bbcd09105b818",
+    "/runtime-es5.7269ada450f475a1c993.js": "429b3059925139bb4ac994ed48d3ef0c345cced6",
+    "/styles.5dc5051fa40b16bbd6e0.css": "df69728aa76e8f8efad095b94826d2557f1befa3"
   },
   "navigationUrls": [
     {
@@ -396,5 +402,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }

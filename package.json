@@ -13,7 +13,7 @@
     "run-server": "http-server -p 8080 -c-1 docs/",
     "analyse-bundle": "yarn run build --stats-json && webpack-bundle-analyzer docs/stats-es2015.json",
     "e2e": "ng e2e",
-    "deploy": "git checkout master && git merge dev && yarn run build && git add -A && git commit -m 'deployment' && git push && git checkout dev"
+    "deploy": "ng deploy interior-design --cname=woven-interiors.com"
   },
   "hooks": {
     "pre-commit": "lint-staged"
@@ -83,7 +83,7 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-etc": "^1.10.0",
     "tslint-plugin-prettier": "^2.1.0",
-    "typescript": "4.1.5",
+    "typescript": "^4.2.3",
     "webpack-bundle-analyzer": "^3.6.0"
   }
 }
