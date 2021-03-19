@@ -18,6 +18,9 @@
         ]
       }
     ],
+    "deprecation": {
+      "severity": "warning"
+    },
     "object-literal-sort-keys": false,
     "no-empty": false,
     "await-promise": true,
